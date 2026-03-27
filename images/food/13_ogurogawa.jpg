@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="format-detection" content="telephone=no">
+	<!-- title -->
+	<title>404 Error Not Found | ドライバーズサイト | 高速道路・高速情報はNEXCO 中日本</title>
+	<meta name="description" content="NEXCO 中日本（中日本高速道路株式会社）【公式サイト】。料金・経路検索や渋滞情報、サービスエリア・パーキングエリア情報、交通規制、ETC割引などの高速道路情報をはじめ、東名高速・名神高速・中央道・北陸道・東海北陸道・名二環・新東名・新名神についてご案内をしています。" />
+	<meta name="keywords" content="高速道路,高速,中日本高速道路,NEXCO 中日本" />
+	<!-- Meta Information -->
+	<meta name="copyright" content="Copyright © Central Nippon Expressway Company Limited All Rights Reserved.">
+	<meta name="Slurp" content="noydir">
+	<meta name="robots" content="noydir">
+	<meta name="robots" content="noodp">
+	<meta name="google-site-verification" content="PdeQi7W7szjcMJrQ00G6DoeyS_3OErsXjjD_fQ6fnxI">
+	<meta property="fb:app_id" content="404211806274451">
+	<link rel="start" href="https://www.c-nexco.co.jp/" title="ホーム">
+	<link rel="contents" href="https://www.c-nexco.co.jp/sitemap.html" title="サイトマップ">
+	<link rel="Shortcut Icon" href="/nexco.ico" type="image/x-icon">
+	<link rel="apple-touch-icon-precomposed" href="https://www.c-nexco.co.jp/images/common/webclip.png">
+	<!-- css -->
+	<!--link rel="stylesheet" href="https://fonts.googleapis.com/earlyaccess/notosansjp.css"-->
+<link rel="stylesheet" href="/assets-driver/css/style.css?20220628">
+<link rel="stylesheet" href="/assets-driver/css/utility.css?20200323">
+<link rel="stylesheet" href="/assets-driver/lib/fancybox2/jquery.fancybox.css">
+<link rel="stylesheet" href="/assets-driver/css/common.css">
+<link rel="stylesheet" href="/assets-driver/css/important-common.css">
+	<!-- js -->
+	<script type="text/javascript" src="/js/googleAnalytics.js"></script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-11434368847"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-11434368847');
+</script>	
+</head>
+<body id="utility" class="driver lower">
+<noscript><div class="noScriptMessage"><p>現在 JavaScriptがOFF に設定されています。すべての機能を使用するためには、JavaScriptの設定をONに変更してください。</p></div></noscript>
+<!-- blockskip -->
+<nav id="top" class="blockskip--area" tabindex="0"><ul><li><a href="#main">メインコンテンツに移動する</a></li></ul></nav>
+<header>
+	<div class="inner">
+		<!-- ロゴのリンクを設定 -->
+		<p class="ci"><a href="/"><img src="/assets-driver/img/cmn/logo.png" alt="NEXCO中日本 ドライバーズサイト"></a></p>
+		  <div class="utility--area">
+    <!-- ユーティリティナビゲーション -->
+    <nav class="utility__nav _pc">
+      <ul>
+        <li class="utility__nav--item"><a href="/corporate/" target="_blank">企業情報サイト<i class="ico ico--blank" aria-label="新しいウィンドウを開きます。"></i></a></li>
+        <li class="utility__nav--item"><a href="https://highwaypost.c-nexco.co.jp/">FAQ・お問い合わせ</a></li>
+        <li>
+          <nav class="lang--area">
+            <a href="javascript:void(0);" class="lang" lang="en">language</a>
+            <ul aria-hidden="false">
+              <!--li class="lang__select lang"><a href="javascript:void(0);">言語を選択</a></li-->
+              <li><a data-value="ja" tabindex="0" href="https://www.c-nexco.co.jp">日本語</a></li>
+              <li><a data-value="en" tabindex="0" href="https://www.c-nexco.co.jp/en/" target="_blank" lang="en">English <i class="ico ico--blank__white" aria-label="新しいウィンドウを開きます。"></i></a></li>
+              <li><a data-value="zh-CHS" tabindex="0" href="https://www.c-nexco.co.jp/zh-CHS/" target="_blank" lang="zh-cmn-Hans">简体中文 <i class="ico ico--blank__white" aria-label="新しいウィンドウを開きます。"></i></a></li>
+              <li><a data-value="zh-CHT" tabindex="0" href="https://www.c-nexco.co.jp/zh-CHT/" target="_blank" lang="zh-cmn-Hant">繁體中文 <i class="ico ico--blank__white" aria-label="新しいウィンドウを開きます。"></i></a></li>
+              <li><a data-value="ko" tabindex="0" href="https://www.c-nexco.co.jp/ko/" target="_blank" lang="ko">한국어 <i class="ico ico--blank__white" aria-label="新しいウィンドウを開きます。"></i></a></li>
+            </ul>
+          </nav>
+        </li>
+      </ul>
+    </nav>
+    <!-- サイト内検索 -->
+    <div class="search--area">
+      <a href="javascript:void(0);" class="btn_search_sp">検索</a>
+      <div class="nav__icon__close close">
+        <a href="javascript:void(0);">
+        <span></span>
+        <span></span>
+        <span></span>
+        <small>閉じる</small>
+        </a>
+      </div>
+
+      <form name="SS_searchForm" id="SS_searchForm" action="https://pro.syncsearch.jp/search" method="get" enctype="application/x-www-form-urlencoded">
+      <input type="hidden" name="site" value="GZBA8U7Z">
+      <input type="hidden" name="charset" value="UTF-8">
+
+            <!-- 日本語 -->
+      <input type="hidden" name="group" value="1">
+      <input type="hidden" name="design" value="1">
+      
+      <input type="text" name="query" value="" id="SS_searchQuery" maxlength="100" placeholder="サイト内検索" aria-label="サイト内検索" aria-labelledby="SS_searchSubmit" title="キーワード入力欄"><input type="image" name="submit" id="SS_searchSubmit" src="/assets-driver/img/cmn/ico_search.png" alt="検索する" aria-label="検索する" class="btn_search">
+
+      </form>
+    </div>
+    <div class="nav__icon">
+      <a href="javascript:void(0);">
+      <span></span>
+      <span></span>
+      <span></span>
+      <small>メニュー</small>
+      </a>
+    </div>
+  </div>
+
+	</div>
+</header>
+
+<nav class="global--area">
+    <div class="inner">
+            <!-- 日本語 -->
+      <ul class="sf-menu" id="gnav">
+          <li class="level--1">
+            <a href="javascript:void(0);" class="ico--down">料金・ルート検索</a>
+            <dl class="sub-menu" id="navi" aria-hidden="false">
+              <div>
+              <dd>
+                <ul>
+                  <li><a href="/navi/">料金・ルート検索トップ</a></li>
+                  <li><a href="https://dc.c-nexco.co.jp/dc/DriveCompass.html">高速道路料金・ルート検索</a></li>
+                  <li><a href="https://dc.c-nexco.co.jp/dc/DriveCompass.html#stt_iptTtl">IC名から検索する</a></li>
+                  <li><a href="https://dc.c-nexco.co.jp/dc/DriveCompassList.html?&optCrTp=2&optSrt=time">道路一覧から検索する</a></li>
+                  <li><a href="/navi/toll/">高速道路簡易料金表</a></li>
+                </ul>
+                <ul>
+                  <li><a href="/navi/jct_map/">標識ナビまっぷ</a></li>
+                  <li><a href="/navi/tollgate_map/">料金所ナビまっぷ</a></li>
+                  <li><a href="https://dc2.c-nexco.co.jp/etc/service/dedicated_etc.html">ETC専用料金所</a></li>
+                </ul>
+                <!-- 料金・ルート検索トップ画像 -->
+                <div class="cate-img _pc">
+                  <img src="/assets-driver/img/cmn/sub-navi-img.jpg" width="410" height="215" alt="">
+                </div>
+              </dd>
+              </div>
+            </dl>
+          </li>
+          <li class="level--1">
+            <a href="javascript:void(0);" class="ico--down">ETC・割引案内</a>
+            <dl class="sub-menu" id="etc" aria-hidden="false">
+              <div>
+              <dd>
+                <ul>
+                  <li><a href="https://dc2.c-nexco.co.jp/etc/">ETC・割引案内トップ</a></li>
+                  <li><a href="https://dc2.c-nexco.co.jp/etc/discount/">料金割引のご案内</a></li>
+                  <li><a href="https://dc2.c-nexco.co.jp/etc/discount/etc/">ETC割引</a></li>
+                  <li><a href="https://dc2.c-nexco.co.jp/etc/discount/frequency/">大口・多頻度割引</a></li>
+                  <li><a href="https://dc2.c-nexco.co.jp/etc/discount/handicapped/">障がい者割引</a></li>
+                </ul>
+                <ul>
+                  <li><a href="https://dc2.c-nexco.co.jp/etc/service/">ETC各種サービス</a></li>
+                  <li><a href="https://dc2.c-nexco.co.jp/etc/etc_guide/">ETCの使い方</a></li>
+                  <li><a href="https://dc2.c-nexco.co.jp/etc/service/dedicated_etc.html">ETC専用料金所</a></li>
+                  <li><a href="https://hayatabi.c-nexco.co.jp/">高速道路周遊パス「速旅」</a></li>
+                </ul>
+                <!-- ETC・割引案内画像 -->
+                <div class="cate-img _pc">
+                  <img src="/assets-driver/img/cmn/sub-etc-img.jpg" width="410" height="215" alt="">
+                </div>
+              </dd>
+              </div>
+            </dl>
+          </li>
+          <li class="level--1">
+            <a href="javascript:void(0);" class="ico--down">交通情報</a>
+            <dl class="sub-menu" id="jam" aria-hidden="false">
+              <div>
+              <dd>
+                <ul>
+                  <li><a href="/jam/" target="_blank" >交通情報トップ<i class="ico ico--blank__white _sp_inline" aria-label="新しいウィンドウを開きます。"></i></a></li>
+                  <li><a href="https://www.c-ihighway.jp/web/" target="_blank" >リアルタイム交通情報<i class="ico ico--blank__white _sp_inline" aria-label="新しいウィンドウを開きます。"></i></a></li>
+                  <li><a href="https://dc.c-nexco.co.jp/jam/cal/">渋滞予測カレンダー​</a></li>
+                  <li><a href="https://dc.c-nexco.co.jp/jam/route/">渋滞予測ルート検索</a></li>
+                  <li><a href="/jam/cause/">主要な渋滞箇所</a></li>
+                </ul>
+                <ul>
+                  <li><a href="/jam/michiradi/">道路情報提供アプリ みちラジ</a></li>
+                  <li><a href="/jam/jam_map/">渋滞ポイントナビまっぷ</a></li>
+                  <li><a href="http://c-nexco.highway-telephone.jp/main/" target="_blank">目で見るハイウェイテレホン<i class="ico ico--blank__white _sp_inline" aria-label="新しいウィンドウを開きます。"></i></a></li>
+                </ul>
+                <!-- 交通情報画像 -->
+                <div class="cate-img _pc">
+                  <img src="/assets-driver/img/cmn/sub-jam-img.jpg" width="410" height="215" alt="">
+                </div>
+              </dd>
+              </div>
+            </dl>
+          </li>
+          <li class="level--1">
+            <a href="javascript:void(0);" class="ico--down">工事規制情報</a>
+            <dl class="sub-menu" id="construction" aria-hidden="false">
+              <div>
+              <dd>
+                <ul>
+                  <li><a href="/construction/" target="_blank" >工事規制情報トップ<i class="ico ico--blank__white _sp_inline" aria-label="新しいウィンドウを開きます。"></i></a></li>
+                  <li><a href="/construction/useful/" target="_blank" >工事情報お役立ちサイト<br>
+                    ～工事規制予定MAP、レーン閉鎖情報、<br>リニューアル工事など大規模な工事に関する情報などはこちら～</a></li>
+                  <li><a href="/construction/selection/" target="_blank" >はじめませんかルート＆時間選択<br>
+                    ～ 事前検索で工事中でも快適ドライビング ～</a></li>
+                </ul>
+                <!-- 工事規制情報画像 -->
+                <div class="cate-img _pc">
+                  <img src="/assets-driver/img/cmn/sub-construction-img.jpg" width="410" height="215" alt="">
+                </div>
+              </dd>
+              </div>
+            </dl>
+          </li>
+          <li class="level--1">
+            <a href="javascript:void(0);" class="ico--down">安全走行</a>
+            <dl class="sub-menu" id="safety" aria-hidden="false">
+              <div>
+              <dd>
+                <ul>
+                  <li><a href="/safety/">安全走行トップ</a></li>
+                  <li><a href="/safety/justincase/">高速道路トラブル対処法</a></li>
+                  <li><a href="/safety/safety_drive/">セーフティドライブ</a></li>
+                  <li><a href="/safety/gyakusouboushi/">無くそう逆走―高速道路は一方通行です―</a></li>
+                  <li><a href="/special/snow/">冬の雪道ドライブガイド</a></li>
+                  <li><a href="/safety/emergency_phone/">高速道路でやむを得ず停車したら</a></li>
+                </ul>
+                <ul>
+                  <li><a href="/safety/earthquake/">緊急地震速報を受信したら</a></li>
+                  <li><a href="/safety/tokusya/">特殊車両・危険物積載車両のお客さまへ</a></li>
+                  <li><a href="/safety/overload/">重量オーバーは禁止です!!</a></li>
+                  <li><a href="/pdf/sapa.pdf" target="_blank">SA・PAのご利用に関するお願い<i class="ico ico--pdf__white _sp_inline" aria-label="PDFが開きます"></i></a></li>
+                  <li><a href="/safety/9910/">落下物や故障車などを発見したら!!</a></li>
+                  <li><a href="/safety/traffic_restrictions/">工事規制箇所を通行する際のポイント</a></li>
+                </ul>
+                <!-- 安全走行画像 -->
+                <div class="cate-img _pc">
+                  <img src="/assets-driver/img/cmn/sub-safety-img.jpg" width="339" height="215" alt="">
+                </div>
+              </dd>
+              </div>
+            </dl>
+          </li>
+          <li class="level--1">
+            <a href="javascript:void(0);" class="ico--down">サービスエリア・お買物</a>
+            <dl class="sub-menu" id="sapa" aria-hidden="false">
+              <div>
+              <dd>
+                <ul>
+                  <li><a href="https://sapa.c-nexco.co.jp/">サービスエリア・お買物トップ</a></li>
+                  <li><a href="https://sapa.c-nexco.co.jp/search/highway">SA・PA検索</a></li>
+                  <li><a href="https://sapa.c-nexco.co.jp/special">特集・イベント</a></li>
+                  <li><a href="https://sapa.c-nexco.co.jp/guide">施設・サービス案内</a></li>
+                  <li><a href="https://sapa.c-nexco.co.jp/brand">NEOPASA・EXPASA</a></li>
+                </ul>
+                <ul>
+                  <li><a href="https://www.aeon.co.jp/rd/aaqr/?qr=700013" target="_blank" >イオンNEXCO中日本カード<i class="ico ico--blank__white _sp_inline" aria-label="新しいウィンドウを開きます。"></i></a></li>
+                </ul>
+                <!-- サービスエリア・お買物画像 -->
+                <div class="cate-img _pc">
+                  <img src="/assets-driver/img/cmn/sub-sapa-img.jpg" width="410" height="215" alt="">
+                </div>
+              </dd>
+              </div>
+            </dl>
+          </li>
+          <li class="level--1">
+            <a href="javascript:void(0);" class="ico--down">旅行・ドライブ</a>
+            <dl class="sub-menu" id="hayatabi" aria-hidden="false">
+              <div>
+              <dd>
+                <ul>
+                  <li><a href="https://hayatabi.c-nexco.co.jp/">旅行・ドライブトップ</a></li>
+                  <li><a href="https://hayatabi.c-nexco.co.jp/">高速道路周遊パス「速旅」</a></li>
+                  <li><a href="https://hayatabi.c-nexco.co.jp/page/?id=224">観光情報・キャンペーン</a></li>
+                  <li><a href="https://hayatabi.c-nexco.co.jp/ticket/">宿泊情報</a></li>
+                  <li><a href="https://hayatabi.c-nexco.co.jp/tour/">ツアー・イベント</a></li>
+                </ul>
+                <ul>
+                  <li><a href="https://www.yorimichi-onsen.jp/" target="_blank">よりみち温泉 <i class="ico ico--blank__white _sp_inline" aria-label="新しいウィンドウを開きます。"></i></a></li>
+                  <li><a href="https://www.yorimichinoyado.com/" target="_blank">よりみちの宿 <i class="ico ico--blank__white _sp_inline" aria-label="新しいウィンドウを開きます。"></i></a></li>
+                  <li><a href="https://www.terrace-gate.jp/" target="_blank">テラスゲート土岐 <i class="ico ico--blank__white _sp_inline" aria-label="新しいウィンドウを開きます。"></i></a></li>
+                  <li><a href="https://hayatabi.c-nexco.co.jp/page/?id=225">その他グループ会社運営施設</a></li>
+                </ul>
+                <!-- 速旅画像 -->
+                <div class="cate-img _pc">
+                  <img src="/assets-driver/img/cmn/sub-hayatabi-img.jpg" width="410" height="215" alt="">
+                </div>
+              </dd>
+              </div>
+            </dl>
+          </li>
+        </ul>
+    
+
+      <div class="utility__nav _sp">
+        <ul>
+          <li class="utility__nav--item"><a href="/corporate" target="_blank">企業情報サイト <i class="ico ico--blank__white _sp_inline" aria-label="新しいウィンドウを開きます。"></i></a></li>
+          <li class="utility__nav--item"><a href="https://highwaypost.c-nexco.co.jp/">FAQ・お問い合わせ</a></li>
+          <li>
+            <nav class="lang--area">
+              <a href="javascript:void(0);" class="lang" lang="en">Language</a>
+              <ul aria-hidden="false">
+                <li><a data-value="ja" tabindex="0" href="https://www.c-nexco.co.jp">日本語</a></li>
+                <li><a data-value="en" tabindex="0" href="https://www.c-nexco.co.jp/en/" target="_blank" lang="en">English <i class="ico ico--blank__white _sp_inline" aria-label="新しいウィンドウを開きます。"></i></a></li>
+                <li><a data-value="zh-CHS" tabindex="0" href="https://www.c-nexco.co.jp/zh-CHS/" target="_blank" lang="zh-cmn-Hans">简体中文 <i class="ico ico--blank__white _sp_inline" aria-label="新しいウィンドウを開きます。"></i></a></li>
+                <li><a data-value="zh-CHT" tabindex="0" href="https://www.c-nexco.co.jp/zh-CHT/" target="_blank" lang="zh-cmn-Hant">繁體中文 <i class="ico ico--blank__white _sp_inline" aria-label="新しいウィンドウを開きます。"></i></a></li>
+                <li><a data-value="ko" tabindex="0" href="https://www.c-nexco.co.jp/ko/" target="_blank" lang="ko">한국어 <i class="ico ico--blank__white _sp_inline" aria-label="新しいウィンドウを開きます。"></i></a></li>
+              </ul>
+            </nav>
+          </li>
+        </ul>
+      </div>
+
+
+
+    </div>
+  </nav>
+<hr class="hide">
+<div id="content" class="content rn">
+	<main id="main" tabindex="-1">
+
+		<!-- 重要なお知らせ -->
+		
+		<!-- ヘッダーイメージ -->
+		<div class="main--header-images "></div>
+
+		<!-- 本文 -->
+		<div class="main--body">
+
+			<div class="inner">
+				<!-- 本文内ヘッダー -->
+				<section class="main--header">
+
+					<div class="inner">
+						<h1 class="tle--lv1"><span>お探しのページが見つかりませんでした。<br />
+									404 Error File Not Found.</span></h1>
+					</div>
+				</section>
+
+				<section class="sec sec--box">
+
+					<h2 class="tle--lv2 mt30">ご迷惑をおかけして申し訳ありません。</h2>
+
+					<p class="">以下いずれかの原因により、お探しのページが見つかりませんでした。</p>
+					<div class="col2">
+						<div class="grid">
+							<ul class="list--desc">
+								<li>ページが削除された。</li>
+								<li>ページのURLが変わった。</li>
+								<li>誤ったURLを入力してしまった。</li>
+							</ul>
+							<p class="mt30">お手数ですが、トップページに戻るか、<br />
+								検索窓よりキーワードを入力してお探しください。<br />以下のトップページに戻るからトップページへ移動いただけます。</p>
+						</div>
+						<div class="grid">
+							<img src="/images/common/template/mascot.png" style="" class="_pc_mt0" alt="みちまる君">
+						</div>
+					</div>
+
+					<p class="grid mat20">
+						<a class="btn alignCenter" href="https://www.c-nexco.co.jp/">トップページに戻る</a>
+					</p>
+
+				</section>
+			</div>
+		</div>
+
+		<ul class="pagetop--area">
+			<li><a href="#top"><img src="/assets-driver/img/cmn/btn_pagetop.png" alt="ページの先頭へ戻る"></a></li>
+		</ul>
+
+	</main>
+</div>
+<!-- /content -->
+<hr class="hide">
+
+
+<!-- --------------------- -->
+
+
+<footer>
+	<!-- フッターサイトマップ -->
+<div class="footer_sitemap--area">
+    <div class="inner">
+
+                <!-- 日本語 -->
+
+        <nav class="footer_sitemap--nav">
+            <ul>
+              <li class="level--1">
+                <a href="/navi/">料金・ルート検索</a>
+                <ul>
+                  <li><a href="https://dc.c-nexco.co.jp/dc/DriveCompass.html">高速道路料金・ルート検索</a></li>
+                  <li><a href="https://dc.c-nexco.co.jp/dc/DriveCompass.html#stt_iptTtl">IC名から検索する</a></li>
+                  <li><a href="https://dc.c-nexco.co.jp/dc/DriveCompassList.html?&optCrTp=2&optSrt=time">道路一覧から検索する</a></li>
+                  <li><a href="/navi/toll/">高速道路簡易料金表</a></li>
+                  <li><a href="/navi/jct_map/">標識ナビまっぷ</a></li>
+                  <li><a href="/navi/tollgate_map/">料金所ナビまっぷ</a></li>
+                  <li><a href="https://dc2.c-nexco.co.jp/etc/service/dedicated_etc.html">ETC専用料金所</a></li>
+                </ul>
+              </li>
+              <li class="level--1">
+                <a href="https://dc2.c-nexco.co.jp/etc/">ETC・割引案内</a>
+                <ul>
+                  <li><a href="https://dc2.c-nexco.co.jp/etc/discount/">料金割引のご案内</a></li>
+                  <li><a href="https://dc2.c-nexco.co.jp/etc/discount/etc/">ETC割引</a></li>
+                  <li><a href="https://dc2.c-nexco.co.jp/etc/discount/frequency/">大口・多頻度割引</a></li>
+                  <li><a href="https://dc2.c-nexco.co.jp/etc/discount/handicapped/">障がい者割引</a></li>
+                  <li><a href="https://dc2.c-nexco.co.jp/etc/service/">ETC各種サービス</a></li>
+                  <li><a href="https://dc2.c-nexco.co.jp/etc/etc_guide/">ETCの使い方</a></li>
+                  <li><a href="https://dc2.c-nexco.co.jp/etc/service/dedicated_etc.html">ETC専用料金所</a></li>
+                  <li><a href="https://hayatabi.c-nexco.co.jp/">高速道路周遊パス「速旅」</a></li>
+                </ul>
+              </li>
+            </ul>
+            <ul>
+              <li class="level--1">
+                <a href="/jam/">交通情報</a>
+                <ul>
+                  <li><a href="https://www.c-ihighway.jp/pcsite/index.html" target="_blank">リアルタイム交通情報</a></li>
+                  <li><a href="https://dc.c-nexco.co.jp/jam/cal/">渋滞予測カレンダー​</a></li>
+                  <li><a href="https://dc.c-nexco.co.jp/jam/route/">渋滞予測ルート検索</a></li>
+                  <li><a href="/jam/cause/">主要な渋滞箇所</a></li>
+                  <li><a href="/jam/michiradi/">道路情報提供アプリ みちラジ</a></li>
+                  <li><a href="/jam/jam_map/">渋滞ポイントナビまっぷ</a></li>
+                  <li><a href="http://c-nexco.highway-telephone.jp/main/" target="_blank">目で見るハイウェイテレホン</a></li>
+                </ul>
+              </li>
+              <li class="level--1">
+                <a href="/construction/">工事規制情報</a>
+                <ul>
+                  <li><a href="/construction/useful/">
+                    工事情報お役立ちサイト<br>
+                    ～工事規制予定MAP、レーン閉鎖情報、リニューアル工事など大規模な工事に関する情報などはこちら～
+                  </a></li>
+                  <li><a href="/construction/selection/">
+                    はじめませんかルート＆時間選択～ 事前検索で工事中でも快適ドライビング ～
+                  </a></li>
+                </ul>
+              </li>
+            </ul>
+
+            <ul>
+              <li class="level--1">
+                <a href="/safety/">安全走行</a>
+                <ul>
+                  <li><a href="/safety/justincase/">高速道路トラブル対処法</a></li>
+                  <li><a href="/safety/safety_drive/">セーフティドライブ</a></li>
+                  <li><a href="/safety/gyakusouboushi/">無くそう逆走<br>―高速道路は一方通行です―</a></li>
+                  <li><a href="/special/snow/">冬の雪道ドライブガイド</a></li>
+                  <li><a href="/safety/emergency_phone/">高速道路でやむを得ず停車したら</a></li>
+                  <li><a href="/safety/earthquake/">緊急地震速報を受信したら</a></li>
+                  <li><a href="/safety/tokusya/">特殊車両・危険物積載車両の<br>お客さまへ</a></li>
+                  <li><a href="/safety/overload/">重量オーバーは禁止です!!</a></li>
+                  <li><a href="/pdf/sapa.pdf" target="_blank">SA・PAご利用上の注意</a></li>
+                  <li><a href="/safety/9910/">落下物や故障車などを発見<br>したら!!</a></li>
+                  <li><a href="/safety/traffic_restrictions/">工事規制箇所を通行する際のポイント</a></li>
+                </ul>
+              </li>
+              <li class="level--1">
+                <a href="http://sapa.c-nexco.co.jp/">サービスエリア・<br class="_sp">お買物</a>
+                <ul>
+                  <li><a href="https://sapa.c-nexco.co.jp/search/highway">SA・PA検索</a></li>
+                  <li><a href="https://sapa.c-nexco.co.jp/special">特集・イベント</a></li>
+                  <li><a href="https://sapa.c-nexco.co.jp/guide">施設・サービス案内</a></li>
+                  <li><a href="https://sapa.c-nexco.co.jp/brand">NEOPASA・EXPASA</a></li>
+                  <li><a href="https://www.aeon.co.jp/rd/aaqr/?qr=700013" target="_blank">イオンNEXCO中日本カード</a></li>
+                </ul>
+              </li>
+            </ul>
+            <ul class="_sp col2_l">
+              <li class="level--1">
+                <a href="https://hayatabi.c-nexco.co.jp/">旅行・ドライブ</a>
+              </li>
+            </ul>
+            <ul class="_pc">
+              <li class="level--1">
+                <a href="https://hayatabi.c-nexco.co.jp/">旅行・ドライブ</a>
+                <ul>
+                  <li><a href="https://hayatabi.c-nexco.co.jp/">高速道路周遊パス「速旅」</a></li>
+                  <li><a href="https://hayatabi.c-nexco.co.jp/page/?id=224">観光情報・キャンペーン</a></li>
+                  <li><a href="https://hayatabi.c-nexco.co.jp/ticket/">宿泊情報</a></li>
+                  <li><a href="https://hayatabi.c-nexco.co.jp/tour/">ツアー・イベント</a></li>
+                  <li><a href="https://www.yorimichi-onsen.jp/" target="_blank">よりみち温泉 </a></li>
+                  <li><a href="https://www.yorimichinoyado.com/" target="_blank">よりみちの宿 </a></li>
+                  <li><a href="https://www.terrace-gate.jp/" target="_blank">テラスゲート土岐 </a></li>
+                  <li><a href="https://hayatabi.c-nexco.co.jp/page/?id=225">その他グループ会社運営施設</a></li>
+                </ul>
+              </li>
+              <li class="level--1"><a href="https://sapa.c-nexco.co.jp/ad" target="_blank">広告メディアのご案内</a></li>
+              <li class="level--1 category"><a href="/movie/">TVCM・動画ギャラリー</a></li>
+              <li class="level--1 category"><a href="/corporate/prkan/">企業PR館コミュニケーション・プラザ</a></li>
+              <li class="level--1 category"><a href="https://highwaypost.c-nexco.co.jp/">FAQ・お問い合わせ</a></li>
+            </ul>
+          </nav>
+
+        
+    </div>
+  </div>
+  <!-- //フッターサイトマップ -->
+	<div class="inner">
+  <div class="footer_utility--area">
+  	<nav class="footer_utility--nav">
+    	<ul>
+        <li><a href="/sitemap.html">サイトマップ</a></li>
+        <li><a href="/highway_rule/">高速道路のご利用に関する規約等</a></li>
+        <li><a href="/site_policy/">サイトポリシー</a></li>
+        <li><a href="/webaccessibility/">ウェブアクセシビリティポリシー</a></li>
+    	</ul>
+    	<ul>
+        <li><a href="/privacy_policy/">プライバシーポリシー</a></li>
+        <li><a href="/security_policy.html">情報セキュリティポリシー</a></li>
+        <li><a href="/link.html">リンク</a></li>
+      </ul>
+  	</nav>
+      <dl class="sns--area">
+          <dt><a href="/sns/">ソーシャルメディア</a></dt>
+          <dd>
+          	<ul>
+              <li><a href="/sns/"><img src="/assets-driver/img/cmn/btn_renew_facebook.png" alt="Facebook" aria-label="SNS公式アカウント一覧へリンクします。"></a></li>
+              <li><a href="/sns/"><img src="/assets-driver/img/cmn/btn_renew_twitter.png" alt="X（旧Twitter）" aria-label="SNS公式アカウント一覧へリンクします。"></a></li>
+              <li><a href="https://www.youtube.com/channel/UCBtSlnZ_ksDuZRYr9ivIMtA" target="_blank"><img src="/assets-driver/img/cmn/btn_renew_youtube.png" alt="YouTube" aria-label="YouTubeを新しいウィンドウで開きます。"></a></li>
+            </ul>
+          </dd>
+      </dl>
+  </div>
+  <div class="copyright--area">
+    <ul class="link--driver">
+      <li><a href="/corporate/" target="_blank">企業情報サイト <i class="ico ico--blank__white" aria-label="新しいウィンドウを開きます。"></i></a></li>
+    </ul>
+    <p class="copyright"><small lang="en">Copyright &copy; Central Nippon Expressway Company Limited All Rights Reserved.</small></p>
+  </div>
+</div>
+</footer>
+<!-- JS -->
+<script src="/assets-driver/lib/jquery/dist/jquery.js"></script>
+<script src="/assets-driver/js/common.js?20220818"></script>
+
+<!-- fancybox -->
+<script type="text/javascript" src="/assets-driver/lib/fancybox2/jquery.fancybox.pack.js"></script>
+
+<!-- 検索フォーム用 -->
+<script src="//pro.syncsearch.jp/common/js/sync_suggest.js"></script>
+<script type="text/javascript">
+SYNCSEARCH_SITE="GZBA8U7Z";
+SYNCSEARCH_GROUP="1";
+</script>
+<script type="text/javascript" src="/assets-driver/js/www.js"></script>
+</body>
+
+</html>

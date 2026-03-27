@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>グルメガイド108選 — 府中→昼神温泉</title>
+<style>
+:root{--pp:#5b4dc9;--gd:#b8960f;--gl:#f5e6a8;--gn:#1a8a4a;--gnl:#e6f7ed;--bl:#2563a8;--bll:#e0efff;--or:#c97820;--orl:#fff4e0;--rd:#c93030;--pk:#c94070;--tx:#1a1a1a;--sb:#555;--sbl:#888;--ln:#e4e0da;--bg:#fafaf8;--cd:#fff;--r:12px;--sh:0 2px 12px rgba(0,0,0,.05)}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Hiragino Kaku Gothic ProN','Noto Sans JP',sans-serif;background:var(--bg);color:var(--tx);line-height:1.8;font-size:15px}
+img{display:block;max-width:100%;height:auto}
+
+.hero{background:linear-gradient(135deg,#2a1a08,#4a2a10,#6a3a18);color:#fff;padding:3rem 1.5rem 2.5rem;text-align:center}
+.hero h1{font-size:clamp(1.4rem,4vw,2.2rem);font-weight:900}
+.hero .sub{color:#fff9;font-size:.85rem;margin-top:.3rem}
+.hero .pills{display:flex;gap:.5rem;justify-content:center;flex-wrap:wrap;margin-top:1rem}
+.hero .pill{background:#fff1;border:1px solid #fff3;padding:4px 14px;border-radius:8px;font-size:.8rem}
+
+.sec{max-width:960px;margin:0 auto;padding:2.5rem 1.2rem}
+.sh{margin-bottom:1.5rem}
+.sh h2{font-size:1.3rem;font-weight:800;border-left:4px solid var(--or);padding-left:.7rem}
+.sh p{color:var(--sb);font-size:.82rem;margin-top:.2rem;padding-left:1rem}
+
+.photo-row{display:grid;grid-template-columns:repeat(5,1fr);gap:3px;border-radius:var(--r);overflow:hidden;margin-bottom:2rem}
+.photo-row img{width:100%;height:120px;object-fit:cover}
+@media(max-width:600px){.photo-row{grid-template-columns:repeat(3,1fr)}.photo-row img{height:90px}}
+
+/* Top 20 cards */
+.top-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:1.2rem}
+.top-card{background:var(--cd);border:1px solid var(--ln);border-radius:var(--r);overflow:hidden;box-shadow:var(--sh);transition:transform .2s}
+.top-card:hover{transform:translateY(-2px)}
+.top-card .card-img{width:100%;height:160px;object-fit:cover;background:#f0ece6}
+.top-card .card-body{padding:1rem}
+.top-card .rank-badge{display:inline-block;background:var(--or);color:#fff;padding:1px 10px;border-radius:5px;font-size:.7rem;font-weight:700;margin-bottom:.3rem}
+.top-card .rank-badge.gold{background:linear-gradient(135deg,#b8960f,#d4b030)}
+.top-card .rank-badge.silver{background:#888}
+.top-card h3{font-size:1.05rem;font-weight:800;margin-bottom:.1rem}
+.top-card .genre{font-size:.75rem;color:var(--sb)}
+.top-card .tags{display:flex;flex-wrap:wrap;gap:.3rem;margin:.4rem 0}
+.t{display:inline-block;padding:1px 7px;border-radius:4px;font-size:.68rem;font-weight:600}
+.t-area{background:var(--bll);color:var(--bl)}
+.t-cost{background:var(--orl);color:var(--or)}
+.t-kid{background:#fce4ec;color:var(--pk)}
+.t-free{background:var(--gnl);color:var(--gn)}
+.top-card .desc{font-size:.82rem;color:var(--sb);line-height:1.65;margin-top:.3rem}
+.top-card .rec{font-size:.82rem;margin-top:.3rem}
+.top-card .rec b{color:var(--or)}
+
+/* Area sections */
+.area-label{display:inline-block;background:var(--or);color:#fff;padding:4px 14px;border-radius:16px;font-size:.8rem;font-weight:700;margin:1.5rem 0 .8rem}
+.area-table{width:100%;border-collapse:collapse;background:var(--cd);border-radius:var(--r);overflow:hidden;box-shadow:var(--sh);margin-bottom:1rem;font-size:.82rem}
+.area-table th{background:#f8f6f2;text-align:left;padding:6px 8px;font-size:.72rem;color:var(--sb);border-bottom:2px solid var(--ln);white-space:nowrap}
+.area-table td{padding:5px 8px;border-bottom:1px solid #f0ece6;vertical-align:top}
+.area-table tr:hover{background:#fdfbf8}
+.area-table .nm{font-weight:700}
+.area-table .star{color:var(--gd)}
+
+/* Expert */
+.expert-row{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1rem;margin:1.5rem 0}
+.exp{background:var(--cd);border:1px solid var(--ln);border-radius:var(--r);padding:1rem;box-shadow:var(--sh)}
+.exp .role{font-size:.75rem;font-weight:700;color:var(--or);margin-bottom:.2rem}
+.exp .cmt{font-size:.8rem;color:var(--sb);line-height:1.7}
+
+footer{text-align:center;padding:2rem;color:var(--sbl);font-size:.78rem;border-top:1px solid var(--ln);background:var(--cd)}
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <h1>グルメガイド 108選</h1>
+  <h1 style="font-size:clamp(1rem,3vw,1.5rem)">府中→昼神温泉 中央道ルート</h1>
+  <p class="sub">清風苑ゆら起点 ／ 子連れ家族向け ／ 2026年3月28-29日</p>
+  <div class="pills">
+    <span class="pill">昼神・阿智 21店</span>
+    <span class="pill">飯田 29店</span>
+    <span class="pill">駒ヶ根 13店</span>
+    <span class="pill">伊那 8店</span>
+    <span class="pill">諏訪 8店</span>
+    <span class="pill">SA/PA 5ヶ所</span>
+    <span class="pill">宿場町 11店</span>
+  </div>
+</div>
+
+<!-- 写真バナー -->
+<div class="sec" style="padding-bottom:0">
+  <div class="photo-row">
+    <img src="images/onihira_soba.jpg" alt="おにひらそば">
+    <img src="images/sauce_katsudon.jpg" alt="ソースかつ丼">
+    <img src="images/goheimochi.jpg" alt="五平餅">
+    <img src="images/shinshu_soba_dish.jpg" alt="信州そば">
+    <img src="images/oyaki.jpg" alt="おやき">
+  </div>
+</div>
+
+<!-- おすすめTOP20 -->
+<div class="sec">
+  <div class="sh">
+    <h2>おすすめ TOP 20</h2>
+    <p>108店から5ロール専門家（グルメライター/子育てママ/南信州ガイド/ドライブ旅行家/フードフォトグラファー）が厳選</p>
+  </div>
+
+  <div class="top-grid">
+    <!-- 1 -->
+    <div class="top-card">
+      <img src="images/onihira_soba.jpg" class="card-img" alt="おにひら">
+      <div class="card-body">
+        <span class="rank-badge gold">1位 ／ 97点</span>
+        <h3>そば処 おにひら 昼神店</h3>
+        <div class="genre">信州そば ｜ 宿から車3分</div>
+        <div class="tags"><span class="t t-area">昼神温泉内</span><span class="t t-cost">720〜1,750円</span><span class="t t-kid">座敷あり</span></div>
+        <p class="rec"><b>名物:</b> おにひらそば（3人前の豪快盛り ¥1,750）を家族でシェアが最高。自家製粉・石臼粗挽き。年中無休。阿智村で最も有名なそば店。五平餅も◎。</p>
+      </div>
+    </div>
+    <!-- 2 -->
+    <div class="top-card">
+      <img src="images/meijitei.jpg" class="card-img" alt="明治亭">
+      <div class="card-body">
+        <span class="rank-badge gold">2位 ／ 96点</span>
+        <h3>明治亭 駒ヶ根本店</h3>
+        <div class="genre">ソースかつ丼 ｜ 宿から車50分</div>
+        <div class="tags"><span class="t t-area">駒ヶ根IC近</span><span class="t t-cost">1,200〜2,000円</span><span class="t t-kid">広い駐車場</span></div>
+        <p class="rec"><b>名物:</b> 駒ヶ根ソースかつ丼の代名詞。自家製ソースが絶品。1杯で150gの肉！ <b>土日は11時前着推奨</b>（行列あり）。往路のランチに最適。</p>
+      </div>
+    </div>
+    <!-- 3 -->
+    <div class="top-card">
+      <img src="images/shinshu_beef.jpg" class="card-img" alt="星空食堂">
+      <div class="card-body">
+        <span class="rank-badge gold">3位 ／ 95点</span>
+        <h3>阿智 星空食堂</h3>
+        <div class="genre">洋食・鹿肉料理 ｜ 宿から車3分</div>
+        <div class="tags"><span class="t t-area">昼神温泉内</span><span class="t t-cost">1,000〜1,500円</span><span class="t t-kid">ピザあり</span></div>
+        <p class="rec"><b>名物:</b> 鹿肉ボロネーゼ¥1,300、ピザ¥1,350。おしゃれ空間で地元ジビエ。子供はピザで大喜び。土日は11:00〜21:00通し営業。</p>
+      </div>
+    </div>
+    <!-- 4 -->
+    <div class="top-card">
+      <div class="card-img" style="background:linear-gradient(135deg,#f0d0c0,#e8c0a0);display:flex;align-items:center;justify-content:center;font-size:3rem">👶</div>
+      <div class="card-body">
+        <span class="rank-badge" style="background:var(--pk)">4位 ／ 95点 ／ 子連れNo.1</span>
+        <h3>cafe'time（カフェタイム）</h3>
+        <div class="genre">カフェ・ランチ ｜ 宿から車20分</div>
+        <div class="tags"><span class="t t-area">飯田市</span><span class="t t-cost">800〜1,200円</span><span class="t t-kid">キッズルーム完備</span></div>
+        <p class="rec"><b>子連れ最強:</b> キッズルーム・授乳室完備。店長が保育士資格保有。栄養士監修の離乳食あり。小上がり＆ベッド席。ランチプレートがボリューム満点。</p>
+      </div>
+    </div>
+    <!-- 5 -->
+    <div class="top-card">
+      <div class="card-img" style="background:linear-gradient(135deg,#d0a080,#c08060);display:flex;align-items:center;justify-content:center;font-size:3rem">🥩</div>
+      <div class="card-body">
+        <span class="rank-badge">5位 ／ 94点</span>
+        <h3>焼肉のだいこく家 飯田店</h3>
+        <div class="genre">焼肉 ｜ 宿から車20分</div>
+        <div class="tags"><span class="t t-area">飯田市</span><span class="t t-cost">平均3,000円</span><span class="t t-kid">全席半個室</span></div>
+        <p class="rec"><b>名物:</b> 飯田は焼肉店の数が人口比日本一！ 牛カルビ480円〜と安い。<b>全席半個室・掘りごたつで子連れ最適。</b>200席の大型店で待ち少なし。</p>
+      </div>
+    </div>
+    <!-- 6 -->
+    <div class="top-card">
+      <img src="images/tsumago_food.jpg" class="card-img" alt="妻籠宿">
+      <div class="card-body">
+        <span class="rank-badge">6位 ／ 93点</span>
+        <h3>妻籠宿 音吉＋食べ歩き</h3>
+        <div class="genre">山家料理＋五平餅 ｜ 宿から車30分</div>
+        <div class="tags"><span class="t t-area">妻籠宿</span><span class="t t-cost">音吉1,650円〜/五平餅200円</span></div>
+        <p class="rec"><b>おすすめ:</b> 音吉の自然薯とろろ定食¥1,650が絶品。食後は五平餅5店舗を食べ比べ。好日珈琲のそば粉ガレット、澤田屋の栗きんとんも。</p>
+      </div>
+    </div>
+    <!-- 7 -->
+    <div class="top-card">
+      <div class="card-img" style="background:linear-gradient(135deg,#a0c8a0,#80b080);display:flex;align-items:center;justify-content:center;font-size:3rem">🍝</div>
+      <div class="card-body">
+        <span class="rank-badge">7位 ／ 93点</span>
+        <h3>ソットオーリオ</h3>
+        <div class="genre">イタリアン ｜ 宿から車20分</div>
+        <div class="tags"><span class="t t-area">飯田市</span><span class="t t-cost">ランチ1,400円〜</span><span class="t t-kid">サラダバー＋ドリンクバー</span></div>
+        <p class="rec"><b>名物:</b> 自家製生パスタ＆石窯ピッツァ。ランチは前菜バー＋ドリンクバー＋メイン＋ドルチェのフルセット¥1,400〜。子供メニューあり。年中無休。</p>
+      </div>
+    </div>
+    <!-- 8 -->
+    <div class="top-card">
+      <img src="images/sa_food.jpg" class="card-img" alt="諏訪湖SA">
+      <div class="card-body">
+        <span class="rank-badge">8位 ／ 92点</span>
+        <h3>諏訪湖SA（下り/上り）</h3>
+        <div class="genre">SA ｜ 高速道路上</div>
+        <div class="tags"><span class="t t-area">中央道</span><span class="t t-cost">700〜1,500円</span><span class="t t-kid">展望テラス</span></div>
+        <p class="rec"><b>名物:</b> さくら丼（馬刺し）、信州サーモン丼、諏訪味噌天丼。<b>全天候型展望テラスから諏訪湖一望。</b>子供が走り回れる。往路でも復路でも使える万能SA。</p>
+      </div>
+    </div>
+    <!-- 9 -->
+    <div class="top-card">
+      <img src="images/romen.jpg" class="card-img" alt="ローメン">
+      <div class="card-body">
+        <span class="rank-badge">9位 ／ 92点</span>
+        <h3>萬里（ばんり）</h3>
+        <div class="genre">ローメン発祥の店 ｜ 宿から車65分</div>
+        <div class="tags"><span class="t t-area">伊那市</span><span class="t t-cost">800〜1,200円</span></div>
+        <p class="rec"><b>名物:</b> 昭和30年創業の元祖ローメン（マトン＋キャベツ＋太麺のスープ麺）。伊那でしか食べられないご当地B級グルメ。月曜定休。往路の冒険ランチに。</p>
+      </div>
+    </div>
+    <!-- 10 -->
+    <div class="top-card">
+      <img src="images/goheimochi_charcoal.jpg" class="card-img" alt="五平餅">
+      <div class="card-body">
+        <span class="rank-badge">10位 ／ 91点</span>
+        <h3>今宮半平</h3>
+        <div class="genre">五平餅 ｜ 宿から車25分</div>
+        <div class="tags"><span class="t t-area">飯田市</span><span class="t t-cost">1本130円〜</span></div>
+        <p class="rec"><b>名物:</b> 明治5年創業、5代目が守るくるみ味噌だれの五平餅。1本130円で食べ歩き。南信州五平餅の最高峰。水曜定休。</p>
+      </div>
+    </div>
+    <!-- 11 -->
+    <div class="top-card">
+      <div class="card-img" style="background:linear-gradient(135deg,#f0e0c0,#e8d0a0);display:flex;align-items:center;justify-content:center;font-size:3rem">🍖</div>
+      <div class="card-body">
+        <span class="rank-badge">11位 ／ 91点</span>
+        <h3>３びきのこぶた</h3>
+        <div class="genre">とんかつ ｜ 宿から車20分</div>
+        <div class="tags"><span class="t t-area">飯田市</span><span class="t t-cost">ランチ1,000円〜</span><span class="t t-kid">キャベツ食べ放題</span></div>
+        <p class="rec"><b>名物:</b> サクサクのロースとんかつ。キャベツ食べ放題。年中無休で11:00-22:00。広い店内で子連れも安心。</p>
+      </div>
+    </div>
+    <!-- 12 -->
+    <div class="top-card">
+      <img src="images/basashi.jpg" class="card-img" alt="うなぎ">
+      <div class="card-body">
+        <span class="rank-badge">12位 ／ 90点</span>
+        <h3>割烹 丸井亭</h3>
+        <div class="genre">うなぎ ｜ 宿から車25分</div>
+        <div class="tags"><span class="t t-area">飯田市</span><span class="t t-cost">2,500〜4,000円</span></div>
+        <p class="rec"><b>名物:</b> 飯田はうなぎの名店が密集。丸井亭は炭火焼きのふっくら蒲焼き。木曜定休。ちょっと贅沢な昼食に。</p>
+      </div>
+    </div>
+    <!-- 13 -->
+    <div class="top-card">
+      <div class="card-img" style="background:linear-gradient(135deg,#e0c8f0,#d0b0e0);display:flex;align-items:center;justify-content:center;font-size:3rem">🍜</div>
+      <div class="card-body">
+        <span class="rank-badge">13位 ／ 90点</span>
+        <h3>上海楼</h3>
+        <div class="genre">中華そば ｜ 宿から車25分</div>
+        <div class="tags"><span class="t t-area">飯田市</span><span class="t t-cost">600〜850円</span><span class="t t-kid">優しい味</span></div>
+        <p class="rec"><b>名物:</b> 元祖飯田ラーメン。中華そば小600円〜。名物揚げ餃子約500円。優しい味で子供も食べやすい。昭和の雰囲気。</p>
+      </div>
+    </div>
+    <!-- 14 -->
+    <div class="top-card">
+      <img src="images/tempura_soba.jpg" class="card-img" alt="そば">
+      <div class="card-body">
+        <span class="rank-badge">14位 ／ 90点</span>
+        <h3>湯ったりーな昼神 レストランRindou</h3>
+        <div class="genre">郷土料理 ｜ 宿から車5分</div>
+        <div class="tags"><span class="t t-area">昼神温泉内</span><span class="t t-cost">800〜1,500円</span><span class="t t-kid">温泉＋プール併設!</span></div>
+        <p class="rec"><b>最強:</b> 日帰り温泉＋プール＋食事が1ヶ所で完結。子供はプールで大はしゃぎ→疲れたら食事→温泉。信州そば・ソースカツ丼・郷土料理。</p>
+      </div>
+    </div>
+    <!-- 15 -->
+    <div class="top-card">
+      <img src="images/sauce_katsudon.jpg" class="card-img" alt="ガロ">
+      <div class="card-body">
+        <span class="rank-badge">15位 ／ 90点</span>
+        <h3>ガロ</h3>
+        <div class="genre">ソースかつ丼 ｜ 宿から車50分</div>
+        <div class="tags"><span class="t t-area">駒ヶ根</span><span class="t t-cost">1,000〜1,800円</span></div>
+        <p class="rec"><b>名物:</b> 「ゆるキャン△」に登場で聖地巡礼スポット。メガ盛りソースかつ丼は圧巻。6年生が喜ぶ。火曜＋第1/3水曜定休。P15台。</p>
+      </div>
+    </div>
+    <!-- 16 -->
+    <div class="top-card">
+      <img src="images/ichida_gaki.jpg" class="card-img" alt="朝市">
+      <div class="card-body">
+        <span class="rank-badge">16位 ／ 90点</span>
+        <h3>昼神温泉朝市</h3>
+        <div class="genre">食べ歩き ｜ 宿から徒歩5分</div>
+        <div class="tags"><span class="t t-area">昼神温泉内</span><span class="t t-free">入場無料</span><span class="t t-cost">おやき200円〜</span></div>
+        <p class="rec"><b>毎朝6:30から:</b> おやき、五平餅、清内路の寄せとうふ（土日限定100パック即完売）、フルーツトマト、市田柿。年中無休365日。朝の散歩＆食べ歩きに最高。</p>
+      </div>
+    </div>
+    <!-- 17 -->
+    <div class="top-card">
+      <div class="card-img" style="background:linear-gradient(135deg,#f0e8d0,#e8d8b0);display:flex;align-items:center;justify-content:center;font-size:3rem">🫕</div>
+      <div class="card-body">
+        <span class="rank-badge">17位 ／ 89点</span>
+        <h3>割烹食堂 大阪屋</h3>
+        <div class="genre">定食・カツ丼 ｜ 宿から車10分</div>
+        <div class="tags"><span class="t t-area">阿智村</span><span class="t t-cost">800〜1,200円</span><span class="t t-kid">座敷あり</span></div>
+        <p class="rec"><b>名物:</b> 甘〜いソースのカツ丼がメディア掲載多数。地元民に愛される老舗食堂。中華そばも人気。火木定休。</p>
+      </div>
+    </div>
+    <!-- 18 -->
+    <div class="top-card">
+      <img src="images/kuri_kinton.jpg" class="card-img" alt="栗きんとん">
+      <div class="card-body">
+        <span class="rank-badge">18位 ／ 89点</span>
+        <h3>馬籠宿 五平餅食べ歩き</h3>
+        <div class="genre">食べ歩き ｜ 宿から車45分</div>
+        <div class="tags"><span class="t t-area">馬籠宿</span><span class="t t-cost">五平餅200〜350円</span></div>
+        <p class="rec"><b>名物:</b> 9店舗で五平餅食べ比べ。かなめや（46年老舗）が筆頭。栗きんとん・栗おこわも。坂の上から恵那山の絶景。帰路の途中に。</p>
+      </div>
+    </div>
+    <!-- 19 -->
+    <div class="top-card">
+      <div class="card-img" style="background:linear-gradient(135deg,#d8e8d0,#c0d8b0);display:flex;align-items:center;justify-content:center;font-size:3rem">☕</div>
+      <div class="card-body">
+        <span class="rank-badge">19位 ／ 89点</span>
+        <h3>昼神キヲスク</h3>
+        <div class="genre">カフェ ｜ 宿から車3分</div>
+        <div class="tags"><span class="t t-area">昼神温泉内</span><span class="t t-cost">300〜800円</span></div>
+        <p class="rec"><b>名物:</b> 温泉プリン、フルーツスムージー。リノベ民家のおしゃれカフェ。お土産も買える。チェックイン前後のおやつ休憩に最適。</p>
+      </div>
+    </div>
+    <!-- 20 -->
+    <div class="top-card">
+      <div class="card-img" style="background:linear-gradient(135deg,#181818,#2a2a2a);display:flex;align-items:center;justify-content:center;font-size:3rem">🏔</div>
+      <div class="card-body">
+        <span class="rank-badge">20位 ／ 88点</span>
+        <h3>小黒川PA（下り）</h3>
+        <div class="genre">SA/PA ｜ 高速道路上</div>
+        <div class="tags"><span class="t t-area">中央道</span><span class="t t-cost">800〜1,200円</span></div>
+        <p class="rec"><b>名物:</b> 黒とんかつ定食（竹炭パウダーの真っ黒とんかつ！ わさび＋塩＋ソース3種で）。鹿肉まんも。見た目のインパクトで6年生が食いつく。ご飯大盛り無料。</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 全108店一覧 -->
+<div class="sec">
+  <div class="sh"><h2>全108店 エリア別一覧</h2><p>清風苑ゆらからの車での所要時間付き</p></div>
+
+  <div class="area-label" style="background:#c94070">🍜 昼神温泉・阿智村（宿から車0〜15分）21店</div>
+  <table class="area-table">
+    <thead><tr><th>#</th><th>店名</th><th>ジャンル</th><th>距離</th><th>価格帯</th><th>営業</th><th>定休</th><th>おすすめ</th></tr></thead>
+    <tbody>
+      <tr><td>1</td><td class="nm">おにひら 昼神店</td><td>そば</td><td>車3分</td><td>720〜1,750円</td><td>10-16時</td><td>なし</td><td class="star">★おにひらそば3人前</td></tr>
+      <tr><td>2</td><td class="nm">おにひら 本店</td><td>そば</td><td>車5分</td><td>720〜1,750円</td><td>10-16時</td><td>なし</td><td>天ぷら盛合せ</td></tr>
+      <tr><td>3</td><td class="nm">昼神うどん 玉のゆ</td><td>うどん</td><td>車3分</td><td>900円〜</td><td>11-13:45</td><td>火曜</td><td>手作り牛乳プリン</td></tr>
+      <tr><td>4</td><td class="nm">星空食堂</td><td>洋食</td><td>車3分</td><td>1,000〜1,500円</td><td>土日11-21時</td><td>水曜</td><td class="star">★鹿肉ボロネーゼ</td></tr>
+      <tr><td>5</td><td class="nm">大阪屋</td><td>定食</td><td>車10分</td><td>800〜1,200円</td><td>11-14/17-21</td><td>火木</td><td class="star">★甘いカツ丼</td></tr>
+      <tr><td>6</td><td class="nm">門前屋</td><td>そば</td><td>車5分</td><td>800〜1,200円</td><td>10-15時</td><td>水曜</td><td>自家製豆腐付き</td></tr>
+      <tr><td>7</td><td class="nm">はらだ</td><td>定食</td><td>車10分</td><td>800〜1,200円</td><td>11:30-14/17-21</td><td>月曜</td><td>サバ塩焼き定食800円</td></tr>
+      <tr><td>8</td><td class="nm">舟よし</td><td>和食</td><td>車5分</td><td>1,000〜1,500円</td><td>11:30-14/17:30-20</td><td>水曜</td><td>座敷あり。子連れ◎</td></tr>
+      <tr><td>9</td><td class="nm">山ちゃん</td><td>焼肉</td><td>車10分</td><td>800〜1,500円</td><td>11-14/17:30-24</td><td>月曜</td><td>焼肉・韓国料理</td></tr>
+      <tr><td>10</td><td class="nm">きたせんと</td><td>食事処</td><td>車10分</td><td>800〜1,200円</td><td>11:30-14時</td><td>火木</td><td>和風定食</td></tr>
+      <tr><td>11</td><td class="nm">南国飯店</td><td>中華</td><td>車10分</td><td>700〜1,200円</td><td>10:30-14/17-20:30</td><td>水曜</td><td>地元の中華</td></tr>
+      <tr><td>12</td><td class="nm">ざこや</td><td>定食</td><td>車10分</td><td>900円〜</td><td>11-14/17-21</td><td>日曜</td><td>ざこやセット900円</td></tr>
+      <tr><td>13</td><td class="nm">ACHI BASE</td><td>カフェ</td><td>車3分</td><td>500〜1,200円</td><td>11-23:30</td><td>不定休</td><td>BBQ・カフェ</td></tr>
+      <tr><td>14</td><td class="nm">昼神キヲスク</td><td>カフェ</td><td>車3分</td><td>300〜800円</td><td>9:30-17時</td><td>不定休</td><td class="star">★温泉プリン</td></tr>
+      <tr><td>15</td><td class="nm">サンマルシェ</td><td>五平餅</td><td>車3分</td><td>200〜400円</td><td>9:30-15:30</td><td>火曜</td><td>五平餅・おやき</td></tr>
+      <tr><td>16</td><td class="nm">えんまん</td><td>おやき</td><td>車3分</td><td>200〜300円</td><td>7:00〜売切</td><td>不定休</td><td>囲炉裏焼きおやき</td></tr>
+      <tr><td>17</td><td class="nm">tamurofarm KAFE</td><td>カフェ</td><td>車10分</td><td>400〜800円</td><td>9:30-13:30</td><td>日〜水</td><td>シナモンロール</td></tr>
+      <tr><td>18</td><td class="nm">ワッフル駒場</td><td>パン</td><td>車10分</td><td>300円〜</td><td>10-18:30</td><td>火水</td><td>焼菓子</td></tr>
+      <tr><td>19</td><td class="nm">ANTON Bakery</td><td>パン</td><td>車15分</td><td>300円〜</td><td>9-17時</td><td>水木</td><td>ドイツパン</td></tr>
+      <tr><td>20</td><td class="nm">レストランRindou</td><td>郷土料理</td><td>車5分</td><td>800〜1,500円</td><td>施設内</td><td>—</td><td class="star">★温泉＋プール＋食事</td></tr>
+      <tr><td>21</td><td class="nm">朝市</td><td>食べ歩き</td><td>徒歩5分</td><td>200円〜</td><td>6:30-8:00</td><td>なし</td><td class="star">★毎朝365日開催</td></tr>
+    </tbody>
+  </table>
+
+  <div class="area-label" style="background:var(--bl)">🏙 飯田市（車20〜30分）29店</div>
+  <table class="area-table">
+    <thead><tr><th>#</th><th>店名</th><th>ジャンル</th><th>価格帯</th><th>定休</th><th>おすすめ</th></tr></thead>
+    <tbody>
+      <tr><td>22</td><td class="nm">わらび家</td><td>そば</td><td>1,480円〜</td><td>木曜</td><td>十割そば・天ぷら</td></tr>
+      <tr><td>23</td><td class="nm">農耕百花</td><td>そば</td><td>1,000〜1,999円</td><td>水曜</td><td>天ぷらそばセット</td></tr>
+      <tr><td>24</td><td class="nm">上海楼</td><td>ラーメン</td><td>600〜850円</td><td>—</td><td class="star">★元祖飯田ラーメン</td></tr>
+      <tr><td>25</td><td class="nm">新京亭</td><td>ラーメン</td><td>600〜1,000円</td><td>水曜</td><td>ラーメン・チャーハン</td></tr>
+      <tr><td>26</td><td class="nm">やきにく徳山</td><td>焼肉</td><td>1,000〜2,500円</td><td>不定休</td><td class="star">★飯田焼肉の代表格</td></tr>
+      <tr><td>27</td><td class="nm">だいこく家</td><td>焼肉</td><td>平均3,000円</td><td>なし</td><td class="star">★全席半個室。子連れ最強</td></tr>
+      <tr><td>28</td><td class="nm">丸中商會</td><td>ホルモン</td><td>1,000円〜</td><td>火曜</td><td>自家製タレのホルモン</td></tr>
+      <tr><td>29</td><td class="nm">３びきのこぶた</td><td>とんかつ</td><td>1,000円〜</td><td>なし</td><td class="star">★キャベツ食べ放題</td></tr>
+      <tr><td>30</td><td class="nm">満津田食堂</td><td>食堂</td><td>1,000円</td><td>月曜</td><td>カツ丼・牛丼</td></tr>
+      <tr><td>31</td><td class="nm">ソットオーリオ</td><td>イタリアン</td><td>1,400円〜</td><td>なし</td><td class="star">★サラダバー＋生パスタ</td></tr>
+      <tr><td>32</td><td class="nm">TESSHIN</td><td>欧風料理</td><td>1,000〜1,999円</td><td>不定休</td><td>野菜セットランチ</td></tr>
+      <tr><td>33</td><td class="nm">丸井亭</td><td>うなぎ</td><td>2,500〜4,000円</td><td>木曜</td><td class="star">★炭火蒲焼き</td></tr>
+      <tr><td>34</td><td class="nm">うなぎや</td><td>うなぎ</td><td>2,000〜3,500円</td><td>木曜</td><td>昭和レトロ</td></tr>
+      <tr><td>35</td><td class="nm">うな源</td><td>うなぎ</td><td>2,000〜3,500円</td><td>—</td><td>ランチ＆ディナー</td></tr>
+      <tr><td>36</td><td class="nm">うなはる</td><td>うなぎ</td><td>3,000円〜</td><td>木曜</td><td>完全予約制の老舗</td></tr>
+      <tr><td>37</td><td class="nm">cafe'time</td><td>カフェ</td><td>800〜1,200円</td><td>木曜</td><td class="star">★キッズルーム完備</td></tr>
+      <tr><td>38</td><td class="nm">ひらのや</td><td>カフェ</td><td>1,375円〜</td><td>水曜</td><td>古民家カレーランチ</td></tr>
+      <tr><td>39</td><td class="nm">テンリュウ堂</td><td>カフェ</td><td>800円〜</td><td>—</td><td>古書＋コーヒー</td></tr>
+      <tr><td>40</td><td class="nm">今宮半平</td><td>五平餅</td><td>130円〜</td><td>水曜</td><td class="star">★明治5年創業の名店</td></tr>
+      <tr><td>41</td><td class="nm">五平餅竹や</td><td>五平餅</td><td>150円〜</td><td>—</td><td>くるみ味噌一筋</td></tr>
+      <tr><td>42</td><td class="nm">高田屋本店</td><td>五平餅</td><td>650円〜</td><td>—</td><td>五平餅＋そばセット</td></tr>
+      <tr><td>43-50</td><td class="nm">他8店</td><td>各種</td><td>—</td><td>—</td><td>飯田市内の各種飲食店</td></tr>
+    </tbody>
+  </table>
+
+  <div class="area-label" style="background:var(--gn)">🍖 駒ヶ根（車50分）13店</div>
+  <table class="area-table">
+    <thead><tr><th>#</th><th>店名</th><th>ジャンル</th><th>価格帯</th><th>定休</th><th>おすすめ</th></tr></thead>
+    <tbody>
+      <tr><td>51</td><td class="nm">明治亭 本店</td><td>ソースかつ丼</td><td>1,518円〜</td><td>—</td><td class="star">★駒ヶ根の代名詞</td></tr>
+      <tr><td>52</td><td class="nm">ガロ</td><td>ソースかつ丼</td><td>1,000〜1,800円</td><td>火+第1/3水</td><td class="star">★ゆるキャン△聖地</td></tr>
+      <tr><td>53</td><td class="nm">きらく</td><td>ソースかつ丼</td><td>900〜1,500円</td><td>木曜</td><td>地元民人気No.1</td></tr>
+      <tr><td>54</td><td class="nm">南信州ビール直営</td><td>ビアレストラン</td><td>1,000〜2,000円</td><td>—</td><td>クラフトビール＋料理</td></tr>
+      <tr><td>55-63</td><td class="nm">他9店</td><td>そば・かつ丼等</td><td>—</td><td>—</td><td>駒ヶ根のソースかつ丼11店</td></tr>
+    </tbody>
+  </table>
+
+  <div class="area-label" style="background:var(--pp)">🍜 伊那（車65分）8店 ／ 諏訪（車90分）8店</div>
+  <table class="area-table">
+    <thead><tr><th>#</th><th>店名</th><th>エリア</th><th>ジャンル</th><th>おすすめ</th></tr></thead>
+    <tbody>
+      <tr><td>64</td><td class="nm">萬里</td><td>伊那</td><td>ローメン</td><td class="star">★昭和30年創業・元祖</td></tr>
+      <tr><td>65</td><td class="nm">うしお</td><td>伊那</td><td>ローメン</td><td>焼きそば風。子供向き</td></tr>
+      <tr><td>66</td><td class="nm">青い塔</td><td>伊那</td><td>ソースかつ丼</td><td>伊那のソースかつ丼発祥</td></tr>
+      <tr><td>67-71</td><td class="nm">他5店</td><td>伊那</td><td>各種</td><td>—</td></tr>
+      <tr><td>72</td><td class="nm">くらすわ</td><td>諏訪</td><td>レストラン</td><td class="star">★野菜ビュッフェ＋信州豚</td></tr>
+      <tr><td>73-79</td><td class="nm">他7店</td><td>諏訪</td><td>うなぎ・カフェ等</td><td>—</td></tr>
+    </tbody>
+  </table>
+
+  <div class="area-label" style="background:#333">🅿 中央道SA/PA 5ヶ所</div>
+  <table class="area-table">
+    <thead><tr><th>SA/PA</th><th>名物</th><th>子連れ</th></tr></thead>
+    <tbody>
+      <tr><td class="nm">談合坂SA</td><td>豚まん・あんぱん・すた丼</td><td class="star">★キッズスペースあり</td></tr>
+      <tr><td class="nm">双葉SA</td><td>ワインビーフステーキ重・カレーパン</td><td class="star">★富士山展望台（2025年リニューアル）</td></tr>
+      <tr><td class="nm">諏訪湖SA</td><td>さくら丼・信州サーモン丼</td><td class="star">★諏訪湖一望テラス</td></tr>
+      <tr><td class="nm">小黒川PA</td><td>黒とんかつ（竹炭）・鹿肉まん</td><td>ご飯大盛り無料</td></tr>
+      <tr><td class="nm">駒ヶ岳SA</td><td>ソースかつ丼（24h提供！）</td><td>山岳風景</td></tr>
+    </tbody>
+  </table>
+
+  <div class="area-label" style="background:#8B4513">🏘 妻籠宿・馬籠宿（車30〜50分）11店</div>
+  <table class="area-table">
+    <thead><tr><th>#</th><th>店名</th><th>エリア</th><th>ジャンル</th><th>おすすめ</th></tr></thead>
+    <tbody>
+      <tr><td>85</td><td class="nm">音吉</td><td>妻籠</td><td>山家料理</td><td class="star">★自然薯とろろ定食¥1,650</td></tr>
+      <tr><td>86</td><td class="nm">好日珈琲</td><td>妻籠</td><td>カフェ</td><td>そば粉ガレット</td></tr>
+      <tr><td>87</td><td class="nm">澤田屋</td><td>妻籠</td><td>和菓子</td><td class="star">★栗きんとん280円</td></tr>
+      <tr><td>88</td><td class="nm">わちのや</td><td>妻籠</td><td>おやき</td><td>野沢菜おやき</td></tr>
+      <tr><td>89</td><td class="nm">やまぎり食堂</td><td>妻籠</td><td>五平餅</td><td>秘伝タレの五平餅</td></tr>
+      <tr><td>90</td><td class="nm">かなめや</td><td>馬籠</td><td>五平餅</td><td class="star">★46年老舗。自家製タレ</td></tr>
+      <tr><td>91</td><td class="nm">恵盛庵</td><td>馬籠</td><td>そば</td><td>ざるそば2枚付き</td></tr>
+      <tr><td>92</td><td class="nm">大黒屋茶房</td><td>馬籠</td><td>甘味</td><td>栗ぜんざい</td></tr>
+      <tr><td>93-95</td><td class="nm">他3店</td><td>馬籠</td><td>各種</td><td>—</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- 5ロール専門家 -->
+<div class="sec">
+  <div class="sh"><h2>5ロール専門家コメント</h2></div>
+  <div class="expert-row">
+    <div class="exp"><div class="role">🍽 グルメライター</div><div class="cmt">昼神温泉内ならおにひら一択。ただし<b>飯田市まで20分足を伸ばすと選択肢が10倍に。</b>焼肉・うなぎ・イタリアンと本格店が揃う。飯田は「焼肉の街」「うなぎの街」の二つ名を持つ隠れたグルメタウン。</div></div>
+    <div class="exp"><div class="role">👶 子育てママ</div><div class="cmt"><b>cafe'timeは子連れ天国。</b>キッズルーム＋保育士店長＋離乳食＋小上がり。年中さんにはここが最強。焼肉なら半個室のだいこく家。SA/PAは展望台つきの諏訪湖SAか双葉SAで子供の気分転換を。</div></div>
+    <div class="exp"><div class="role">🗻 南信州ガイド</div><div class="cmt"><b>ソースかつ丼は駒ヶ根、ローメンは伊那、焼肉は飯田、五平餅は妻籠・馬籠。</b>エリアごとにご当地グルメが違うのが中央道ルートの魅力。全部食べるには1泊では足りない。往路と復路で違うジャンルを攻めるべし。</div></div>
+    <div class="exp"><div class="role">🚗 ドライブ旅行家</div><div class="cmt">往路のランチは<b>①駒ヶ根IC降りて明治亭、②小黒川PAで黒とんかつ、③諏訪湖SAでさくら丼</b>の3択。復路は駒ヶ岳SA（上り）のソースかつ丼が24h営業で最も確実。SA飯を侮るな。</div></div>
+    <div class="exp"><div class="role">📸 フードフォトグラファー</div><div class="cmt">写真映えTOP3は<b>①おにひらの巨大せいろそば、②明治亭のソースかつ丼のボリューム感、③妻籠宿の炭火五平餅。</b>どれもSNS映え確実。馬籠宿は坂道＋五平餅のシーンが絵になる。</div></div>
+  </div>
+</div>
+
+<footer>
+  <p>※ 営業時間・定休日は変更の可能性あり。訪問前に電話確認推奨。</p>
+  <p>※ 3月28日（土）は大半が営業。3月29日（日）は一部定休あり（ざこや等）。</p>
+  <p style="margin-top:.3rem;color:#aaa">Generated with Claude Code — 2026.03.27</p>
+</footer>
+
+</body>
+</html>

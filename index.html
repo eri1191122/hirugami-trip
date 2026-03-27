@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>昼神温泉 家族旅行 2026.3.28-29</title>
+<style>
+:root{--nv:#0f1b2d;--nv2:#1a2d47;--gd:#c9a84c;--gl:#f0d88a;--rd:#d94f4f;--gn:#3daa6d;--bl:#3b82c4;--sk:#5ba8d9;--or:#e8854a;--pk:#e85d8a;--bg:#f5f2ec;--cd:#fff;--tx:#222;--sb:#666;--ln:#e4ddd4;--r:14px;--sh:0 3px 16px rgba(0,0,0,.06)}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Hiragino Kaku Gothic ProN','Noto Sans JP',sans-serif;background:var(--bg);color:var(--tx);line-height:1.75}
+img{display:block;max-width:100%;height:auto}
+a{color:var(--bl)}
+
+.hero{background:linear-gradient(135deg,var(--nv),var(--nv2),#1e3f5f);color:#fff;padding:4.5rem 2rem 3.5rem;text-align:center;position:relative;overflow:hidden}
+.hero::before{content:'';position:absolute;inset:0;background:radial-gradient(1px 1px at 10% 20%,#fff 50%,transparent 50%),radial-gradient(1px 1px at 30% 60%,#fff 50%,transparent 50%),radial-gradient(1.5px 1.5px at 50% 10%,#fff8 50%,transparent 50%),radial-gradient(1px 1px at 70% 45%,#fff 50%,transparent 50%),radial-gradient(1px 1px at 85% 80%,#fff 50%,transparent 50%),radial-gradient(1px 1px at 55% 90%,#fff 50%,transparent 50%);opacity:.4}
+.hero>*{position:relative;z-index:1}
+.hero .badge{display:inline-block;background:var(--gd);color:var(--nv);padding:4px 20px;border-radius:20px;font-size:.8rem;font-weight:700;letter-spacing:.08em;margin-bottom:1rem}
+.hero h1{font-size:clamp(1.8rem,5vw,3rem);font-weight:900;line-height:1.3}
+.hero h1 em{font-style:normal;color:var(--gl)}
+.hero .sub{color:#fff9;font-size:.95rem;margin-top:.5rem}
+.hero .pills{display:flex;gap:.6rem;justify-content:center;flex-wrap:wrap;margin-top:1.2rem}
+.hero .pill{background:#fff1;border:1px solid #fff3;padding:6px 16px;border-radius:10px;font-size:.85rem}
+
+.s{max-width:1100px;margin:0 auto;padding:3rem 1.2rem}
+.sh{text-align:center;margin-bottom:2rem}
+.sh h2{font-size:1.5rem;font-weight:800;display:inline-block}
+.sh h2::after{content:'';display:block;width:50px;height:3px;background:linear-gradient(90deg,var(--gd),var(--or));margin:8px auto 0;border-radius:2px}
+.sh p{color:var(--sb);font-size:.88rem;margin-top:.4rem}
+
+/* Inn card */
+.inn-hero{background:var(--cd);border-radius:var(--r);box-shadow:var(--sh);overflow:hidden;display:grid;grid-template-columns:1fr 1fr;margin-bottom:2rem}
+.inn-hero .inn-info{padding:2rem}
+.inn-hero .inn-info h3{font-size:1.3rem;font-weight:800;margin-bottom:.2rem}
+.inn-hero .inn-info .stars{color:var(--gd);font-size:.9rem;margin-bottom:.8rem}
+.inn-hero .inn-img{background:linear-gradient(135deg,#d0e8f0,#a8cce0);display:flex;align-items:center;justify-content:center;font-size:5rem;min-height:250px}
+.inn-feat{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:.8rem;margin-top:1rem}
+.inn-feat .f{background:#f8f5f0;border-radius:8px;padding:.7rem;font-size:.82rem}
+.inn-feat .f b{display:block;color:var(--nv);font-size:.9rem;margin-bottom:.1rem}
+@media(max-width:768px){.inn-hero{grid-template-columns:1fr}.inn-hero .inn-img{min-height:180px}}
+
+/* Weather */
+.wx-row{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-bottom:1.2rem}
+.wx{background:var(--cd);border-radius:var(--r);padding:1.2rem;box-shadow:var(--sh);display:flex;align-items:center;gap:1rem}
+.wx .ic{font-size:2.8rem;flex-shrink:0}
+.wx .dy{font-weight:700;color:var(--nv)}
+.wx .tp{font-size:1.3rem;font-weight:800;color:var(--or)}
+.wx .tp b{color:var(--bl);font-size:.9rem}
+.wx .nt{font-size:.75rem;color:var(--sb);margin-top:.15rem}
+.warn{background:#fff3e0;border-left:4px solid var(--or);padding:.8rem 1rem;border-radius:0 10px 10px 0;font-size:.82rem;margin-bottom:1.5rem}
+.warn strong{color:var(--or)}
+@media(max-width:768px){.wx-row{grid-template-columns:1fr}}
+
+/* Cat label */
+.cat{display:inline-block;background:var(--nv);color:#fff;padding:5px 16px;border-radius:18px;font-size:.82rem;font-weight:700;margin:1.5rem 0 1rem}
+
+/* Spot cards */
+.spots{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:1.3rem;margin-bottom:.5rem}
+.sp{background:var(--cd);border-radius:var(--r);overflow:hidden;box-shadow:var(--sh);transition:transform .2s}
+.sp:hover{transform:translateY(-2px)}
+.sp-img{width:100%;height:190px;object-fit:cover;background:#e8e0d4}
+.sp-b{padding:1.1rem}
+.sp-b h3{font-size:1.05rem;font-weight:800;margin-bottom:.1rem}
+.sp-b .tl{font-size:.78rem;color:var(--sb);margin-bottom:.5rem}
+.tags{display:flex;flex-wrap:wrap;gap:.35rem;margin-bottom:.5rem}
+.t{display:inline-block;padding:2px 8px;border-radius:5px;font-size:.7rem;font-weight:600}
+.t-f{background:#e8f5e9;color:#2e7d32}
+.t-c{background:#fff3e0;color:#e65100}
+.t-t{background:#e3f2fd;color:#1565c0}
+.t-d{background:#f3e5f5;color:#7b1fa2}
+.t-k{background:#fce4ec;color:#c62828}
+.t-r{background:#ffebee;color:#b71c1c;font-weight:700}
+.sp-b .desc{font-size:.82rem;color:var(--sb);line-height:1.65}
+.sp-b .kids{background:#fef7ff;border:1px solid #f0d8f8;border-radius:7px;padding:.6rem;font-size:.78rem;margin-top:.5rem}
+.sp-b .kids strong{color:var(--pk)}
+
+/* Lunch */
+.lunch-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:1.2rem}
+.lch{background:var(--cd);border-radius:var(--r);padding:1.3rem;box-shadow:var(--sh);border-left:4px solid var(--gn)}
+.lch h4{font-size:1rem;font-weight:800;margin-bottom:.1rem}
+.lch .genre{font-size:.75rem;color:var(--sb)}
+.lch .meta{display:flex;flex-wrap:wrap;gap:.5rem;margin:.5rem 0}
+.lch .meta span{font-size:.72rem;background:#f5f2ec;padding:2px 7px;border-radius:4px}
+.lch .rec{font-size:.82rem;color:var(--tx);margin-top:.3rem}
+.lch .rec b{color:var(--or)}
+
+/* Timeline */
+.tl-wrap{position:relative;padding-left:2.5rem}
+.tl-wrap::before{content:'';position:absolute;left:11px;top:0;bottom:0;width:3px;background:linear-gradient(180deg,var(--gd),var(--or),var(--gn),var(--bl),var(--nv));border-radius:2px}
+.tl-day{position:relative;background:var(--nv);color:#fff;display:inline-block;padding:7px 20px;border-radius:20px;font-weight:700;font-size:.95rem;margin:1.5rem 0 1.2rem -.8rem;z-index:1}
+.ev{position:relative;margin-bottom:1.4rem;padding-left:.7rem}
+.ev::before{content:'';position:absolute;left:-2rem;top:6px;width:11px;height:11px;border-radius:50%;background:var(--gd);border:2.5px solid #fff;box-shadow:0 1px 4px rgba(0,0,0,.12)}
+.ev.big::before{width:15px;height:15px;background:var(--or);left:-2.15rem;top:4px}
+.ev .tm{font-weight:800;font-size:.92rem;color:var(--nv)}
+.ev .tt{font-weight:700;font-size:1rem}
+.ev .ds{font-size:.82rem;color:var(--sb)}
+.tc{background:var(--cd);border-radius:10px;padding:.9rem 1.1rem;margin-top:.4rem;box-shadow:var(--sh);border-left:4px solid var(--gd);font-size:.82rem}
+.tc.star{border-left-color:#7b68ee;background:linear-gradient(135deg,#f8f6ff,#fff)}
+.tc.berry{border-left-color:var(--pk);background:linear-gradient(135deg,#fff5f7,#fff)}
+.tc.onsen{border-left-color:var(--sk);background:linear-gradient(135deg,#f0f7ff,#fff)}
+.tc.hist{border-left-color:#8B4513;background:linear-gradient(135deg,#fdf5ed,#fff)}
+.tc.food{border-left-color:var(--gn);background:linear-gradient(135deg,#f0fff0,#fff)}
+
+/* Plans */
+.plans{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:1.3rem}
+.pl{background:var(--cd);border-radius:var(--r);padding:1.5rem;box-shadow:var(--sh)}
+.pl.best{border:2.5px solid var(--gd)}
+.pl .sc{font-size:2rem;font-weight:900;color:var(--gd);line-height:1}
+.pl .sc small{font-size:.75rem;color:var(--sb);font-weight:400}
+.pl h3{font-size:1.1rem;font-weight:800;margin:.5rem 0 .3rem}
+.pl ul{list-style:none;padding:0}
+.pl li{padding:.25rem 0;font-size:.85rem;color:var(--sb);border-bottom:1px dashed var(--ln)}
+.pl li::before{content:'▸ ';color:var(--gd);font-weight:700}
+.pl .mr{background:#e8f5e9;padding:.6rem;border-radius:7px;margin-top:.7rem;font-size:.8rem;color:#2e7d32}
+
+/* Traffic */
+.trf{background:var(--nv);border-radius:var(--r);padding:1.8rem;color:#fff;margin:1.5rem 0}
+.trf h3{color:var(--gl);font-size:1.1rem;margin-bottom:.8rem}
+.trf p{color:#fffa;font-size:.85rem}
+.trf table{width:100%;border-collapse:collapse;margin:.8rem 0}
+.trf th{text-align:left;padding:7px;border-bottom:2px solid #fff2;color:var(--gl);font-size:.78rem}
+.trf td{padding:7px;border-bottom:1px solid #fff1;font-size:.85rem;color:#fffd}
+.trf .rc{background:rgba(201,168,76,.15)}
+.trf .rc td{color:var(--gl);font-weight:700}
+.br{display:inline-block;height:6px;border-radius:3px;vertical-align:middle}
+.br-1{width:22px;background:var(--gn)}.br-2{width:40px;background:#e8b93a}.br-3{width:60px;background:var(--or)}.br-5{width:85px;background:var(--rd)}
+.det{background:#fff1;border:1px solid #fff2;border-radius:10px;padding:1rem;margin-top:1rem;font-size:.82rem}
+.det h4{color:var(--gl);margin-bottom:.4rem}
+.det ol{padding-left:1.2rem;color:#fffe}
+.det li{margin-bottom:.2rem}
+
+/* Budget */
+.bgt{background:var(--cd);border-radius:var(--r);padding:1.8rem;box-shadow:var(--sh)}
+.bgt table{width:100%;border-collapse:collapse}
+.bgt th{text-align:left;padding:8px 5px;border-bottom:2px solid var(--ln);color:var(--sb);font-size:.8rem}
+.bgt td{padding:8px 5px;border-bottom:1px solid #f0ece6;font-size:.88rem}
+.bgt td:nth-child(2){text-align:right;font-weight:700}
+.bgt td:nth-child(3){color:var(--sb);font-size:.78rem}
+.bgt .tot{text-align:right;font-size:1.3rem;font-weight:900;color:var(--or);margin-top:.8rem;padding-top:.7rem;border-top:3px solid var(--gd)}
+
+/* Checklist */
+.chks{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1rem}
+.ck{background:var(--cd);border-radius:var(--r);padding:1.2rem;box-shadow:var(--sh)}
+.ck h4{font-size:.9rem;font-weight:700;margin-bottom:.6rem;padding-bottom:.4rem;border-bottom:2px solid var(--ln)}
+.ck ul{list-style:none;padding:0}
+.ck li{padding:.2rem 0;font-size:.82rem;color:var(--sb);cursor:pointer}
+.ck li::before{content:'☐ ';color:var(--sb)}
+.ck li.done{color:var(--gn)}.ck li.done::before{content:'☑ '}
+
+footer{text-align:center;padding:2rem 1.5rem;background:var(--cd);border-top:1px solid var(--ln);color:var(--sb);font-size:.8rem}
+
+@media(max-width:768px){.spots{grid-template-columns:1fr}.plans{grid-template-columns:1fr}.tl-wrap{padding-left:2rem}.ev::before{left:-1.6rem}.ev.big::before{left:-1.75rem}}
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <div class="badge">FAMILY TRIP 2026</div>
+  <h1><em>日本一の星空</em>に会いに行く<br>昼神温泉 1泊2日</h1>
+  <p class="sub">府中市清水が丘 → 清風苑ゆら（昼神温泉）／ 中央道 約250km</p>
+  <div class="pills">
+    <span class="pill">3/28（土）→ 3/29（日）</span>
+    <span class="pill">大人＋小6＋年中</span>
+    <span class="pill">15:00 チェックイン</span>
+    <span class="pill">翌16:00 帰宅</span>
+  </div>
+</div>
+
+<!-- ===== 宿情報 ===== -->
+<div class="s">
+  <div class="sh"><h2>宿｜癒楽の宿 清風苑ゆら</h2><p>オリコン顧客満足度2年連続1位。接客4.7/5.0の名宿</p></div>
+  <div class="inn-hero">
+    <div class="inn-info">
+      <h3>清風苑ゆら</h3>
+      <div class="stars">★4.5（楽天）／ ★4.4（じゃらん）／ 87.2点（ゆこゆこ）</div>
+      <div class="inn-feat">
+        <div class="f"><b>📍 住所</b>阿智村智里338-19</div>
+        <div class="f"><b>🕐 IN / OUT</b>15:00〜18:00 ／ 10:00</div>
+        <div class="f"><b>♨ 泉質</b>pH9.7 アルカリ性単純硫黄泉</div>
+        <div class="f"><b>🛁 貸切風呂</b>¥3,300／45分（要電話予約）</div>
+        <div class="f"><b>🍽 夕食</b>月替わり会席＋信州プレミアム牛</div>
+        <div class="f"><b>🌅 朝食</b>和朝食膳＋サラダバー 7:30〜9:00</div>
+        <div class="f"><b>👶 年中さん</b>食事布団付 ¥7,700 ／ 布団のみ ¥3,300</div>
+        <div class="f"><b>🅿 駐車場</b>無料 約35台</div>
+      </div>
+      <p style="font-size:.82rem;color:var(--sb);margin-top:.8rem">☎ 0265-43-4141 ｜ 名物の<b>砂塩風呂</b>（¥3,800/60分）は中学生以上限定。大人だけでぜひ。</p>
+    </div>
+    <div class="inn-img">♨️</div>
+  </div>
+
+  <!-- 天気 -->
+  <div class="wx-row">
+    <div class="wx"><div class="ic">☀️</div><div><div class="dy">3/28（土）</div><div class="tp">19℃ <b>/ 2℃</b></div><div class="nt">晴 ｜ 降水40% ｜ 夜は氷点下</div></div></div>
+    <div class="wx"><div class="ic">🌤</div><div><div class="dy">3/29（日）</div><div class="tp">21℃ <b>/ 4℃</b></div><div class="nt">晴→曇 ｜ 降水40% ｜ 朝市は5℃前後</div></div></div>
+  </div>
+  <div class="warn"><strong>⚠ 星空鑑賞は標高1,200m・夜は体感-5℃。</strong> 厚手ダウン・手袋・カイロ10枚以上必須。年中さんにブランケットも。</div>
+</div>
+
+<!-- ===== 観光スポット全15ヶ所 ===== -->
+<div class="s">
+  <div class="sh"><h2>観光スポット 全15ヶ所</h2><p>清風苑ゆらからの車での所要時間付き。ここから好きに組み合わせよう</p></div>
+
+  <div class="cat">♨ 宿から近い！ 車5〜25分</div>
+  <div class="spots">
+    <div class="sp">
+      <img src="images/namiai_starry_sky.jpg" class="sp-img">
+      <div class="sp-b">
+        <h3>❶ 浪合パーク（星空鑑賞）</h3>
+        <div class="tl">日本一の星空の村。ガイド付き45分</div>
+        <div class="tags">
+          <span class="t t-d">宿から車15分</span>
+          <span class="t t-c">大人¥1,600 / 小学¥800</span>
+          <span class="t t-f">年中 無料</span>
+          <span class="t t-t">夜 1〜2h</span>
+        </div>
+        <p class="desc">リクライニングチェアで寝転んで満天の星。20:00〜ガイド付き45分。曇天時はスクリーン上映。キャンセル当日15時まで無料。</p>
+        <div class="kids"><strong>👧 子連れ:</strong> 寝転ぶだけだから年中さんもOK。双眼鏡レンタル¥1,000。<b>防寒が全て。</b></div>
+      </div>
+    </div>
+    <div class="sp">
+      <img src="images/takagi_ichigo.jpg" class="sp-img">
+      <div class="sp-b">
+        <h3>❷ たかぎ村いちご狩り</h3>
+        <div class="tl">長野県発祥の地。60分食べ放題・練乳おかわり自由</div>
+        <div class="tags">
+          <span class="t t-d">宿から車15分</span>
+          <span class="t t-c">大人¥2,500 / 年中¥1,400</span>
+          <span class="t t-t">1〜1.5h</span>
+          <span class="t t-r">電話予約必須</span>
+        </div>
+        <p class="desc">章姫・紅ほっぺ・ゆめのか食べ比べ。高設栽培で立ったまま収穫。ベビーカーOK。<b>現金のみ</b>。</p>
+        <div class="kids"><strong>👧 子連れ:</strong> 鉄板。章姫は酸味少なく子供向き。練乳自由。☎0265-48-0602 土曜は早めに！</div>
+      </div>
+    </div>
+    <div class="sp">
+      <img src="images/hirugami_asaichi.jpg" class="sp-img">
+      <div class="sp-b">
+        <h3>❸ 昼神温泉朝市</h3>
+        <div class="tl">365日開催。焼きたておやき＆寄せとうふ</div>
+        <div class="tags">
+          <span class="t t-d">宿から徒歩5分</span>
+          <span class="t t-f">入場無料</span>
+          <span class="t t-t">6:30〜8:00（冬時間）</span>
+        </div>
+        <p class="desc">約20店舗。清内路の寄せとうふは<b>土日限定100パック即完売</b>。フルーツトマト（ソムリエサミット2位）も。</p>
+        <div class="kids"><strong>👧 子連れ:</strong> 朝の食べ歩き散歩。試食OKの店も。早起きが旅の特別体験に。</div>
+      </div>
+    </div>
+    <div class="sp">
+      <img src="images/tenryukyo_sorasanpo.jpg" class="sp-img">
+      <div class="sp-b">
+        <h3>❹ そらさんぽ天龍峡</h3>
+        <div class="tl">高さ80m・全長280mの空中散歩</div>
+        <div class="tags">
+          <span class="t t-d">宿から車25分</span>
+          <span class="t t-f">完全無料</span>
+          <span class="t t-f">駐車場も無料</span>
+          <span class="t t-t">30〜45分</span>
+        </div>
+        <p class="desc">天龍峡大橋の下の歩道。80m下に天竜川とJR飯田線。揺れないので安心。ナビは「天竜峡PA」で。</p>
+        <div class="kids"><strong>👧 子連れ:</strong> 吊り橋と違い揺れない！ 電車好きなら眼下の列車に大興奮。無料が嬉しい。</div>
+      </div>
+    </div>
+    <div class="sp">
+      <img src="images/iida_zoo.jpg" class="sp-img">
+      <div class="sp-b">
+        <h3>❺ 飯田市立動物園</h3>
+        <div class="tl">入園無料！ 年中さんにピッタリのサイズ感</div>
+        <div class="tags">
+          <span class="t t-d">宿から車20分</span>
+          <span class="t t-f">入園無料</span>
+          <span class="t t-t">1〜1.5h</span>
+        </div>
+        <p class="desc">ペンギン・ワラビー約60種。ふれあい広場で小動物を触れる。ミニSL「弁慶四世号」。コンパクトで疲れない。</p>
+        <div class="kids"><strong>👧 子連れ:</strong> 年中さんの最高スポット。ふれあい＋ミニSLで大喜び。9:00-16:30、土日営業。</div>
+      </div>
+    </div>
+    <div class="sp">
+      <img src="images/motozenkoji.png" class="sp-img">
+      <div class="sp-b">
+        <h3>❻ 元善光寺</h3>
+        <div class="tl">真っ暗トンネルの「お戒壇めぐり」が冒険</div>
+        <div class="tags">
+          <span class="t t-d">宿から車20分</span>
+          <span class="t t-c">大人¥400</span>
+          <span class="t t-f">子供無料</span>
+          <span class="t t-t">30〜45分</span>
+        </div>
+        <p class="desc">善光寺の御本尊が最初に安置された寺。地下の完全暗闇を手探りで歩く「お戒壇めぐり」は忘れられない体験。</p>
+        <div class="kids"><strong>👧 子連れ:</strong> 暗闇で鍵を見つける冒険は6年生大興奮。年中さんは手を繋いで。駐車場100台無料。</div>
+      </div>
+    </div>
+    <div class="sp">
+      <div class="sp-img" style="background:linear-gradient(135deg,#b8d0e8,#d0e8f0);display:flex;align-items:center;justify-content:center;font-size:4rem">🎭</div>
+      <div class="sp-b">
+        <h3>❼ 川本喜八郎人形美術館</h3>
+        <div class="tl">NHK人形劇の名作200体。全国唯一</div>
+        <div class="tags">
+          <span class="t t-d">宿から車20分</span>
+          <span class="t t-c">大人¥400 / 小学¥200</span>
+          <span class="t t-f">年中 無料</span>
+          <span class="t t-t">30〜45分</span>
+        </div>
+        <p class="desc">三国志・平家物語の精巧な人形200体以上。飯田動物園のすぐ近くでセット可能。</p>
+        <div class="kids"><strong>👧 子連れ:</strong> 人形の精巧さに見入る。動物園とセットで飯田半日コースに。</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="cat">🏘 宿場町エリア｜車35〜45分</div>
+  <div class="spots">
+    <div class="sp">
+      <img src="images/tsumago.jpg" class="sp-img">
+      <div class="sp-b">
+        <h3>❽ 妻籠宿</h3>
+        <div class="tl">日本初の重伝建。江戸の宿場町を歩く</div>
+        <div class="tags">
+          <span class="t t-d">宿から車35分</span>
+          <span class="t t-f">散策無料</span>
+          <span class="t t-c">駐車場¥500</span>
+          <span class="t t-t">1〜1.5h</span>
+        </div>
+        <p class="desc">格子戸の家並みが完全保存。五平餅5店舗（200〜250円）の食べ歩き。10-16時歩行者専用。3月は空いていて◎。</p>
+        <div class="kids"><strong>👧 子連れ:</strong> 五平餅食べ比べは子供も夢中。6年生の社会科にも直結。3月は空いて歩きやすい。</div>
+      </div>
+    </div>
+    <div class="sp">
+      <img src="images/magome.jpg" class="sp-img">
+      <div class="sp-b">
+        <h3>❾ 馬籠宿</h3>
+        <div class="tl">石畳の坂道。恵那山の絶景＋栗きんとん</div>
+        <div class="tags">
+          <span class="t t-d">宿から車40分</span>
+          <span class="t t-f">散策無料</span>
+          <span class="t t-t">1〜1.5h</span>
+        </div>
+        <p class="desc">坂道に並ぶ店が美しい。栗きんとん・五平餅が名物。馬籠は五平餅9軒で食べ比べ可能。</p>
+        <div class="kids"><strong>👧 子連れ:</strong> 栗きんとんソフトが人気。坂道なのでベビーカー厳しい→年中さんは手繋ぎで。写真映え抜群。</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="cat">🚗 中央道沿い・往路で寄れる｜車40〜80分</div>
+  <div class="spots">
+    <div class="sp">
+      <img src="images/kozenji.jpg" class="sp-img">
+      <div class="sp-b">
+        <h3>❿ 光前寺</h3>
+        <div class="tl">霊犬早太郎伝説。光苔が神秘的な1100年の古刹</div>
+        <div class="tags">
+          <span class="t t-d">宿から車40分</span>
+          <span class="t t-f">境内無料</span>
+          <span class="t t-t">30〜60分</span>
+        </div>
+        <p class="desc">化け物を退治した犬「早太郎」の伝説が有名。石垣に光苔（ヒカリゴケ）が自生。杉並木が壮観。駐車場200台無料。</p>
+        <div class="kids"><strong>👧 子連れ:</strong> 早太郎の像と記念撮影！ 広い境内で走り回れる。駒ヶ根ICから5分でアクセス◎。</div>
+      </div>
+    </div>
+    <div class="sp">
+      <img src="images/yomeishu_komagane.png" class="sp-img">
+      <div class="sp-b">
+        <h3>⓫ 養命酒 駒ヶ根工場</h3>
+        <div class="tl">36万㎡の森の無料ミュージアム＋カフェ</div>
+        <div class="tags">
+          <span class="t t-d">宿から車40分</span>
+          <span class="t t-f">入場・見学 無料</span>
+          <span class="t t-t">45〜75分</span>
+        </div>
+        <p class="desc">森の中の工場見学。映像シアター。併設カフェ「くらすわ」のスイーツが絶品。土曜営業（水曜定休）。</p>
+        <div class="kids"><strong>👧 子連れ:</strong> 森の散策路で自然体験。カフェはノンアルコールも充実。光前寺と近いのでセットで。</div>
+      </div>
+    </div>
+    <div class="sp">
+      <img src="images/komagatake.jpg" class="sp-img">
+      <div class="sp-b">
+        <h3>⓬ かんてんぱぱガーデン</h3>
+        <div class="tl">寒天の工場見学＋ゼリー＆ドリンク無料試食</div>
+        <div class="tags">
+          <span class="t t-d">宿から車50分</span>
+          <span class="t t-f">入場・試食 全て無料</span>
+          <span class="t t-t">45〜90分</span>
+        </div>
+        <p class="desc">伊那食品工業の本社。寒天ゼリー・ドリンクの無料試食が大量。工場見学も無料。併設そば店で昼食も可。</p>
+        <div class="kids"><strong>👧 子連れ:</strong> 試食だけで満腹レベル。お土産も充実。財布に最も優しいスポット。9:00-17:00。</div>
+      </div>
+    </div>
+    <div class="sp">
+      <div class="sp-img" style="background:linear-gradient(135deg,#a8d8a8,#d0f0d0);display:flex;align-items:center;justify-content:center;font-size:4rem">🌿</div>
+      <div class="sp-b">
+        <h3>⓭ みはらしファーム</h3>
+        <div class="tl">そば打ち・パン作り・いちご狩り 30種の体験</div>
+        <div class="tags">
+          <span class="t t-d">宿から車55分</span>
+          <span class="t t-c">そば打ち ¥1,350</span>
+          <span class="t t-t">1.5〜2.5h</span>
+          <span class="t t-r">3日前予約</span>
+        </div>
+        <p class="desc">農業公園。そば打ち・パン作りなど30種の体験。10:00と13:00の2回。☎0265-74-1807。</p>
+        <div class="kids"><strong>👧 子連れ:</strong> そば打ちは6年生が主役。年中さんは食べる係。未就学児はそば打ち不可→見学。</div>
+      </div>
+    </div>
+    <div class="sp">
+      <img src="images/suwako.jpg" class="sp-img">
+      <div class="sp-b">
+        <h3>⓮ 諏訪大社 下社秋宮</h3>
+        <div class="tl">日本最古級の神社。御柱の迫力に圧倒</div>
+        <div class="tags">
+          <span class="t t-d">宿から車80分</span>
+          <span class="t t-f">参拝・駐車 無料</span>
+          <span class="t t-t">30〜60分</span>
+        </div>
+        <p class="desc">全国1万社の諏訪神社の総本社。高さ17mの御柱。諏訪湖SAからすぐ降りて10分。御朱印集めは6年生に◎。</p>
+      </div>
+    </div>
+    <div class="sp">
+      <div class="sp-img" style="background:linear-gradient(135deg,#d8e8f8,#c0d8f0);display:flex;align-items:center;justify-content:center;font-size:4rem">🔮</div>
+      <div class="sp-b">
+        <h3>⓯ SUWAガラスの里</h3>
+        <div class="tl">ガラス工芸体験＋諏訪湖ビュー</div>
+        <div class="tags">
+          <span class="t t-d">宿から車80分</span>
+          <span class="t t-c">大人¥770 / 子供無料</span>
+          <span class="t t-t">1〜1.5h</span>
+        </div>
+        <p class="desc">長野最大のガラス美術館。キャンドル作り・アクセサリー作りなど手作り体験が豊富。諏訪湖眺望。</p>
+        <div class="kids"><strong>👧 子連れ:</strong> 手作り体験は6年生も年中さんも夢中。水陸両用バス（大人¥3,000/子供¥2,000）も。</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ===== ランチスポット ===== -->
+<div class="s">
+  <div class="sh"><h2>ランチスポット</h2><p>清風苑ゆらからの所要時間付き</p></div>
+
+  <div class="cat">🍜 温泉周辺（車5〜20分）</div>
+  <div class="lunch-grid">
+    <div class="lch">
+      <h4>そば処 おにひら 本店</h4>
+      <div class="genre">信州そば ｜ 宿から車5分</div>
+      <div class="meta"><span>10:00〜16:00</span><span>年中無休</span><span>720〜1,750円</span></div>
+      <p class="rec"><b>おすすめ:</b> おにひらそば（3人前の豪快盛り ¥1,750）は家族でシェアが最高。自家製粉・石臼粗挽き。阿智村の行列店。五平餅もあり。</p>
+    </div>
+    <div class="lch">
+      <h4>そば処 三日庵</h4>
+      <div class="genre">信州そば（繊細な細打ち）｜ 宿から車5分</div>
+      <div class="meta"><span>11:00〜14:30</span><span>水曜定休</span><span>1,000〜1,999円</span></div>
+      <p class="rec"><b>おすすめ:</b> 職人手編みの特注ざるで提供。おにひらが豪快なら三日庵は繊細。13時以降は売切れ注意。</p>
+    </div>
+    <div class="lch">
+      <h4>お食事処 ざこや</h4>
+      <div class="genre">定食・食堂 ｜ 宿から車5分</div>
+      <div class="meta"><span>昼11:00〜14:00</span><span>800〜1,200円</span></div>
+      <p class="rec"><b>おすすめ:</b> ざこや定食（刺身＋肉 ¥900）、ソースかつ丼¥900。地元密着の食堂で気兼ねなし。メニュー豊富で子供の好みに合わせやすい。</p>
+    </div>
+    <div class="lch">
+      <h4>昼神キヲスク</h4>
+      <div class="genre">カフェ・スイーツ ｜ 宿から車3分</div>
+      <div class="meta"><span>9:30〜17:00</span><span>木曜定休</span><span>400〜800円</span></div>
+      <p class="rec"><b>おすすめ:</b> 湯けむり温泉プリン、フルーツスムージー。リノベ民家のおしゃれカフェ。おやつ休憩に最適。お土産も。</p>
+    </div>
+  </div>
+
+  <div class="cat">🏘 宿場町で食べ歩き</div>
+  <div class="lunch-grid">
+    <div class="lch" style="border-left-color:#8B4513">
+      <h4>妻籠宿の食べ歩き（5店舗）</h4>
+      <div class="genre">五平餅・そば ｜ 宿から車35分</div>
+      <div class="meta"><span>9:00〜15:00頃</span><span>五平餅 200〜250円</span></div>
+      <p class="rec"><b>おすすめ:</b> <b>吉村屋</b>の炭火焼き五平餅。<b>藤乙</b>の手打ちそば＋山菜。<b>木ノ花屋</b>の渋皮栗アイス。<b>好日珈琲</b>のそば粉ガレット。食べ歩きだけでお腹いっぱいに。</p>
+    </div>
+    <div class="lch" style="border-left-color:#8B4513">
+      <h4>馬籠宿の食べ歩き（9店舗）</h4>
+      <div class="genre">五平餅・栗きんとん ｜ 宿から車40分</div>
+      <div class="meta"><span>9:00〜16:00頃</span><span>五平餅 200〜350円</span></div>
+      <p class="rec"><b>おすすめ:</b> <b>かなめや</b>の46年自家製タレ五平餅。<b>馬籠茶屋</b>の栗おこわ定食（¥1,000〜）。馬籠は「団子型」五平餅が特徴。</p>
+    </div>
+  </div>
+
+  <div class="cat">🅿 中央道SA（往路・復路で）</div>
+  <div class="lunch-grid">
+    <div class="lch" style="border-left-color:var(--bl)">
+      <h4>駒ヶ岳SA（上り＝帰路）</h4>
+      <div class="genre">ソースかつ丼・そば</div>
+      <div class="meta"><span>24時間営業</span><span>820〜1,000円</span></div>
+      <p class="rec"><b>おすすめ:</b> 三元豚ソースカツ丼¥820。安曇野もりそば。<b>帰路の昼食に最適。</b>中央アルプス眺望。</p>
+    </div>
+    <div class="lch" style="border-left-color:var(--bl)">
+      <h4>諏訪湖SA（上り＝帰路）</h4>
+      <div class="genre">そば・おやき・ラーメン</div>
+      <div class="meta"><span>フードコート24h</span><span>700〜1,200円</span></div>
+      <p class="rec"><b>おすすめ:</b> 信州味噌ラーメン。クリーミーチーズおやき（いろり堂）。諏訪湖一望の展望デッキで食べると格別。</p>
+    </div>
+    <div class="lch" style="border-left-color:var(--bl)">
+      <h4>駒ヶ根IC周辺（明治亭 本店）</h4>
+      <div class="genre">ソースかつ丼の聖地 ｜ 宿から車40分</div>
+      <div class="meta"><span>☎0265-83-1115</span><span>1,200〜2,000円</span></div>
+      <p class="rec"><b>おすすめ:</b> 駒ヶ根ソースかつ丼の代名詞。自家製ソースが絶品。<b>土日は11時前着推奨</b>（行列店）。光前寺とセットで。</p>
+    </div>
+  </div>
+</div>
+
+<!-- ===== プラン3選 ===== -->
+<div class="s">
+  <div class="sh"><h2>おすすめプラン3選</h2><p>5ロール専門家がブレスト → 評価 → 90点以上の修正を反映</p></div>
+  <div class="plans">
+    <div class="pl best">
+      <div class="sc">96 <small>/ 100</small></div>
+      <h3>A「王道フルコース」</h3>
+      <ul>
+        <li><b>往路:</b> 光前寺（無料）→ いちご狩り → おにひらで昼食 → 15:00 IN</li>
+        <li><b>夜:</b> 星空鑑賞（浪合パーク）</li>
+        <li><b>翌朝:</b> 朝市 → 妻籠宿（五平餅で昼食）→ 駒ヶ岳SA → 帰路</li>
+        <li>立ち寄り <b>5ヶ所</b>｜バランス型</li>
+      </ul>
+      <div class="mr">専門家: いちご＋星空＋宿場町の黄金比。おにひらの豪快そばで6年生も満足。年中さんは動物より食べ物に反応する年齢。食べ歩きが正解。</div>
+    </div>
+    <div class="pl">
+      <div class="sc">94 <small>/ 100</small></div>
+      <h3>B「年中さん最優先」</h3>
+      <ul>
+        <li><b>往路:</b> かんてんぱぱ（無料試食）→ いちご狩り → ざこやで昼食 → 15:00 IN</li>
+        <li><b>夜:</b> 星空鑑賞</li>
+        <li><b>翌朝:</b> 朝市 → 動物園（無料）→ そらさんぽ（無料）→ 駒ヶ岳SA → 帰路</li>
+        <li>立ち寄り <b>6ヶ所</b>｜無料4ヶ所でコスパ最強</li>
+      </ul>
+      <div class="mr">専門家: 動物園＋そらさんぽは年中さんのテンション最大化。かんてんぱぱの無料試食は子供天国。帰路の時間余裕も◎。</div>
+    </div>
+    <div class="pl">
+      <div class="sc">92 <small>/ 100</small></div>
+      <h3>C「6年生の冒険」</h3>
+      <ul>
+        <li><b>往路:</b> 養命酒工場（森散策）→ 元善光寺（暗闇冒険）→ 昼食 → 15:00 IN</li>
+        <li><b>夜:</b> 星空鑑賞</li>
+        <li><b>翌朝:</b> 朝市 → いちご狩り → 馬籠宿（五平餅＋絶景）→ 帰路</li>
+        <li>立ち寄り <b>6ヶ所</b>｜6年生が「すごい！」連発</li>
+      </ul>
+      <div class="mr">専門家: 暗闇トンネル＋星空＋馬籠の歴史で6年生の知的好奇心を直撃。馬籠は恵那山の眺望が晴天なら圧巻。</div>
+    </div>
+  </div>
+</div>
+
+<!-- ===== タイムライン Aプラン ===== -->
+<div class="s">
+  <div class="sh"><h2>Aプラン タイムライン</h2><p>清風苑ゆら 15:00 IN ／ 翌10:00 OUT ／ 16:00帰宅</p></div>
+  <div class="tl-wrap">
+    <div class="tl-day">DAY 1 — 3月28日（土）</div>
+    <div class="ev"><div class="tm">7:00</div><div class="tt">🏠 府中出発</div><div class="ds">国立府中IC → 中央道。朝食は車内 or 談合坂SA。</div></div>
+    <div class="ev"><div class="tm">7:50</div><div class="tt">🅿 談合坂SA（15分）</div><div class="ds">トイレ＋豚まん680円。8:30以降は混雑。</div></div>
+    <div class="ev"><div class="tm">9:10</div><div class="tt">🅿 諏訪湖SA（20分）</div><div class="ds">展望デッキから諏訪湖一望。記念撮影。</div></div>
+    <div class="ev big"><div class="tm">10:00 - 10:45</div><div class="tt">⛩ 光前寺</div><div class="tc">駒ヶ根ICから5分。早太郎の像＋杉並木＋光苔。<b>無料・P無料</b>。45分でサクッと。</div></div>
+    <div class="ev big"><div class="tm">11:30 - 12:30</div><div class="tt">🍓 たかぎいちご狩り</div><div class="tc berry">60分食べ放題。章姫・紅ほっぺ。練乳自由。<b>要予約 ☎0265-48-0602 ／ 現金のみ</b></div></div>
+    <div class="ev"><div class="tm">13:00</div><div class="tt">🍜 昼食｜おにひら本店</div><div class="tc food">宿から車5分。おにひらそば（3人前¥1,750）を家族シェア。自家製粉の田舎そば＋五平餅。<b>年中無休 10:00-16:00</b></div></div>
+    <div class="ev big"><div class="tm">15:00</div><div class="tt">♨ 清風苑ゆら チェックイン</div><div class="tc onsen">pH9.7の美肌の湯を堪能。<b>貸切風呂（¥3,300/45分）は電話で時間予約を。</b>足湯「ふれあいの湯」も。散策＆昼神キヲスクでおやつ。</div></div>
+    <div class="ev"><div class="tm">17:30</div><div class="tt">🍽 夕食（清風苑ゆら）</div><div class="ds">月替わり会席＋信州プレミアム牛ステーキ。追加で馬刺し¥1,870も（2日前予約 or 当日16時まで）。</div></div>
+    <div class="ev big"><div class="tm">19:30 - 21:00</div><div class="tt">🌟 浪合パーク — 日本一の星空</div><div class="tc star">宿から車15分。20:00〜ガイド付き45分。大人¥1,600/小学¥800/年中無料。<b>防寒フル装備！</b></div></div>
+
+    <div class="tl-day" style="margin-top:2rem">DAY 2 — 3月29日（日）</div>
+    <div class="ev big"><div class="tm">6:30 - 7:30</div><div class="tt">🌅 昼神温泉朝市</div><div class="tc">宿から徒歩5分。おやき＋五平餅＋<b>寄せとうふ（土日限定！）</b>。フルーツトマトも。</div></div>
+    <div class="ev"><div class="tm">7:30</div><div class="tt">🍳 朝食（清風苑ゆら）</div><div class="ds">和朝食膳＋サラダバー。挽きたてコーヒー飲み放題。7:30〜9:00。</div></div>
+    <div class="ev"><div class="tm">10:00</div><div class="tt">🧳 チェックアウト → 妻籠宿へ（車35分）</div></div>
+    <div class="ev big"><div class="tm">10:40 - 12:00</div><div class="tt">🏘 妻籠宿 散策＆昼食</div><div class="tc hist">五平餅食べ歩き（吉村屋・俵屋里久 etc）＋<b>藤乙で手打ちそば</b>。中央P ¥500。歩行者専用で安全。</div></div>
+    <div class="ev"><div class="tm">12:00</div><div class="tt">🚗 出発 → 飯田山本IC → 中央道（車40分）</div><div class="ds"><b>渋滞回避のため12時出発。</b>余裕をもって。</div></div>
+    <div class="ev"><div class="tm">13:00</div><div class="tt">🅿 駒ヶ岳SA（軽食 20分）</div><div class="ds">ソースかつ丼¥820。または妻籠で満腹ならスルー。</div></div>
+    <div class="ev"><div class="tm">15:00 - 15:30</div><div class="tt">🏠 府中着</div><div class="ds">16:00リミットに余裕をもって到着。</div></div>
+  </div>
+</div>
+
+<!-- ===== 渋滞 ===== -->
+<div class="s">
+  <div class="sh"><h2>渋滞情報</h2><p>帰路の出発時刻が全てを決める</p></div>
+  <div class="trf">
+    <h3>⚠ 3/29（日）中央道 上り線</h3>
+    <p>小仏トンネル（上野原IC〜八王子JCT）がボトルネック。ピーク時15〜25km・+60〜90分。</p>
+    <table>
+      <thead><tr><th>妻籠出発</th><th>小仏TN通過</th><th>渋滞リスク</th><th>府中到着</th></tr></thead>
+      <tbody>
+        <tr class="rc"><td><b>12:00 ★推奨</b></td><td>14:30頃</td><td><span class="br br-1"></span> ほぼなし</td><td><b>15:00〜15:30</b></td></tr>
+        <tr><td>12:45</td><td>15:15頃</td><td><span class="br br-2"></span> 軽い</td><td>15:30〜16:00</td></tr>
+        <tr><td>13:30</td><td>16:00頃</td><td><span class="br br-3"></span> ピーク突入</td><td>16:30〜17:00</td></tr>
+        <tr><td>14:00</td><td>16:30頃</td><td><span class="br br-5"></span> 最悪</td><td>17:30〜18:00</td></tr>
+      </tbody>
+    </table>
+    <div class="det">
+      <h4>🔀 渋滞回避ルート</h4>
+      <ol>
+        <li><b>大月IC回避:</b> 大月ICで降りて国道20号 → 相模湖IC → 中央道復帰</li>
+        <li><b>圏央道経由:</b> 八王子JCT手前で圏央道 → あきる野IC → 一般道で府中</li>
+      </ol>
+    </div>
+  </div>
+</div>
+
+<!-- ===== 予算 ===== -->
+<div class="s">
+  <div class="sh"><h2>予算見積もり</h2><p>大人2＋小6＋年中 ／ Aプランの場合</p></div>
+  <div class="bgt">
+    <table>
+      <thead><tr><th>項目</th><th>金額</th><th>備考</th></tr></thead>
+      <tbody>
+        <tr><td>高速代（往復ETC）</td><td>≒¥11,000</td><td>国立府中IC↔飯田山本IC</td></tr>
+        <tr><td>ガソリン代</td><td>≒¥5,000</td><td>500km/15km/L/170円</td></tr>
+        <tr><td>清風苑ゆら（1泊2食4名）</td><td>¥50,000〜70,000</td><td>プランによる</td></tr>
+        <tr><td>貸切風呂</td><td>¥3,300</td><td>45分</td></tr>
+        <tr><td>いちご狩り</td><td>¥8,900</td><td>大人2,500×2+小学2,500+年中1,400</td></tr>
+        <tr><td>浪合パーク</td><td>¥4,000</td><td>大人1,600×2+小学800+年中無料</td></tr>
+        <tr><td>昼食（おにひら）</td><td>≒¥3,500</td><td>おにひらそば+単品</td></tr>
+        <tr><td>妻籠宿 食べ歩き＋昼食</td><td>≒¥3,500</td><td>五平餅+そば</td></tr>
+        <tr><td>妻籠宿 駐車場</td><td>¥500</td><td></td></tr>
+        <tr><td>お土産・おやつ</td><td>≒¥3,000</td><td>朝市・キヲスク等</td></tr>
+      </tbody>
+    </table>
+    <div class="tot">合計 ≒ ¥93,000〜113,000</div>
+  </div>
+</div>
+
+<!-- ===== チェックリスト ===== -->
+<div class="s">
+  <div class="sh"><h2>出発前チェックリスト</h2></div>
+  <div class="chks">
+    <div class="ck">
+      <h4>📞 事前予約（最優先）</h4>
+      <ul>
+        <li onclick="this.classList.toggle('done')">いちご狩り ☎0265-48-0602</li>
+        <li onclick="this.classList.toggle('done')">清風苑ゆら 貸切風呂 ☎0265-43-4141</li>
+        <li onclick="this.classList.toggle('done')">浪合パーク 営業日確認</li>
+        <li onclick="this.classList.toggle('done')">夕食に馬刺し追加するなら2日前まで</li>
+      </ul>
+    </div>
+    <div class="ck">
+      <h4>🧥 防寒（星空用）</h4>
+      <ul>
+        <li onclick="this.classList.toggle('done')">厚手ダウン（全員）</li>
+        <li onclick="this.classList.toggle('done')">手袋・ニット帽・マフラー</li>
+        <li onclick="this.classList.toggle('done')">貼るカイロ 10枚以上</li>
+        <li onclick="this.classList.toggle('done')">ブランケット（年中さん用）</li>
+      </ul>
+    </div>
+    <div class="ck">
+      <h4>💰 持ち物</h4>
+      <ul>
+        <li onclick="this.classList.toggle('done')">現金 ¥15,000以上</li>
+        <li onclick="this.classList.toggle('done')">ETCカード</li>
+        <li onclick="this.classList.toggle('done')">子供の着替え・おやつ</li>
+        <li onclick="this.classList.toggle('done')">スマホ充電器（車用も）</li>
+        <li onclick="this.classList.toggle('done')">懐中電灯（星空用）</li>
+      </ul>
+    </div>
+    <div class="ck">
+      <h4>🚗 前日確認</h4>
+      <ul>
+        <li onclick="this.classList.toggle('done')">天気予報（tenki.jp→阿智村）</li>
+        <li onclick="this.classList.toggle('done')">中央道の冬タイヤ規制</li>
+        <li onclick="this.classList.toggle('done')">ガソリン満タン</li>
+        <li onclick="this.classList.toggle('done')">タブレットに動画DL（車3時間用）</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <p>※ 料金・営業時間は2026年3月調査。お出かけ前に各公式サイトで最新情報をご確認ください。</p>
+  <p style="margin-top:.3rem;color:#aaa">Generated with Claude Code — 2026.03.27</p>
+</footer>
+
+<script>
+document.querySelectorAll('.ck li').forEach(li=>{
+  li.addEventListener('click',function(){this.classList.toggle('done')})
+})
+</script>
+</body>
+</html>

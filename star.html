@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>星空鑑賞ガイド — 昼神温泉 2026.3.28</title>
+<style>
+:root{--pp:#5b4dc9;--pp2:#7c6fe0;--ppl:#ede8ff;--gd:#b8960f;--gl:#f5e6a8;--gn:#1a8a4a;--gnl:#e6f7ed;--bl:#2563a8;--bll:#e0efff;--rd:#c93030;--rdl:#fde8e8;--or:#c97820;--orl:#fff4e0;--tx:#1a1a1a;--sb:#555;--sbl:#888;--ln:#e4e0da;--bg:#fafaf8;--cd:#fff;--r:12px;--sh:0 2px 12px rgba(0,0,0,.05)}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Hiragino Kaku Gothic ProN','Noto Sans JP',sans-serif;background:var(--bg);color:var(--tx);line-height:1.8;font-size:15px}
+img{display:block;max-width:100%;height:auto}
+
+/* Hero - dark section */
+.hero{background:linear-gradient(135deg,#0a1425,#0f1e3a,#152a4a);color:#fff;padding:3rem 1.5rem 2.5rem;text-align:center;position:relative;overflow:hidden}
+.hero::before{content:'';position:absolute;inset:0;background:radial-gradient(1px 1px at 12% 18%,#fff 50%,transparent 50%),radial-gradient(1.5px 1.5px at 28% 52%,#fff9 50%,transparent 50%),radial-gradient(1px 1px at 45% 10%,#fff 50%,transparent 50%),radial-gradient(2px 2px at 55% 68%,#f5e6a8 50%,transparent 50%),radial-gradient(1px 1px at 68% 30%,#fff 50%,transparent 50%),radial-gradient(1px 1px at 82% 72%,#fff 50%,transparent 50%),radial-gradient(1px 1px at 92% 15%,#fff 50%,transparent 50%);opacity:.5}
+.hero>*{position:relative;z-index:1}
+.hero h1{font-size:clamp(1.5rem,4.5vw,2.3rem);font-weight:900;line-height:1.35}
+.hero .sub{color:#fff9;font-size:.88rem;margin-top:.4rem}
+
+/* Conditions bar */
+.cond-bar{display:flex;flex-wrap:wrap;gap:.6rem;justify-content:center;margin-top:1.2rem}
+.cond-bar .c{background:#fff1;border:1px solid #fff2;padding:5px 14px;border-radius:8px;text-align:center;font-size:.8rem}
+.cond-bar .c b{display:block;font-size:.95rem}
+
+/* Sections */
+.sec{max-width:960px;margin:0 auto;padding:2.5rem 1.2rem}
+.sec-t{margin-bottom:1.8rem}
+.sec-t h2{font-size:1.35rem;font-weight:800;color:var(--tx);border-left:4px solid var(--pp);padding-left:.8rem}
+.sec-t p{color:var(--sb);font-size:.85rem;margin-top:.3rem;padding-left:1.2rem}
+
+/* Photo banner */
+.photo-banner{display:grid;grid-template-columns:repeat(4,1fr);gap:4px;border-radius:var(--r);overflow:hidden;margin-bottom:2rem}
+.photo-banner img{width:100%;height:140px;object-fit:cover}
+@media(max-width:600px){.photo-banner{grid-template-columns:repeat(2,1fr)}.photo-banner img{height:100px}}
+
+/* Ranking cards */
+.rank-card{background:var(--cd);border:1px solid var(--ln);border-radius:var(--r);margin-bottom:1.2rem;overflow:hidden;box-shadow:var(--sh)}
+.rank-card.gold{border-color:var(--gd);border-width:2px}
+.rank-card .top{display:flex;align-items:stretch}
+.rank-card .top-img{width:200px;min-height:160px;flex-shrink:0;object-fit:cover}
+.rank-card .top-body{padding:1.2rem;flex:1}
+.rank-card .badge{display:inline-block;padding:2px 10px;border-radius:5px;font-size:.7rem;font-weight:700;margin-bottom:.4rem}
+.badge-gold{background:var(--gl);color:#7a6200}
+.badge-pp{background:var(--ppl);color:var(--pp)}
+.badge-gn{background:var(--gnl);color:var(--gn)}
+.badge-bl{background:var(--bll);color:var(--bl)}
+.badge-or{background:var(--orl);color:var(--or)}
+.rank-card h3{font-size:1.1rem;font-weight:800;margin-bottom:.1rem}
+.rank-card .sub2{font-size:.8rem;color:var(--sb)}
+.rank-card .score-bar{display:flex;align-items:center;gap:.4rem;margin:.5rem 0}
+.score-num{font-size:1.3rem;font-weight:900;color:var(--pp)}
+.score-num small{font-size:.7rem;color:var(--sbl);font-weight:400}
+.score-fill{flex:1;height:6px;background:#eee;border-radius:3px;overflow:hidden}
+.score-fill span{display:block;height:100%;border-radius:3px;background:linear-gradient(90deg,var(--pp),var(--gd))}
+.rank-card .grid-info{display:grid;grid-template-columns:auto 1fr;gap:.2rem .7rem;font-size:.82rem;margin-top:.5rem}
+.rank-card .grid-info dt{color:var(--sbl);font-weight:600}
+.rank-card .grid-info dd{color:var(--tx)}
+.rank-card .merit{background:var(--ppl);padding:.7rem;border-radius:8px;margin-top:.6rem;font-size:.8rem;color:var(--pp)}
+.rank-card .warn-box{background:var(--orl);padding:.6rem;border-radius:8px;margin-top:.4rem;font-size:.78rem;color:var(--or)}
+@media(max-width:640px){.rank-card .top{flex-direction:column}.rank-card .top-img{width:100%;height:160px}}
+
+/* Spot table */
+.spot-table{width:100%;border-collapse:collapse;background:var(--cd);border-radius:var(--r);overflow:hidden;box-shadow:var(--sh);margin-bottom:1.5rem}
+.spot-table th{background:#f5f3ef;text-align:left;padding:8px 10px;font-size:.75rem;color:var(--sb);font-weight:600;border-bottom:2px solid var(--ln);white-space:nowrap}
+.spot-table td{padding:7px 10px;font-size:.82rem;border-bottom:1px solid #f0ece6;vertical-align:top}
+.spot-table tr:hover{background:#faf8f5}
+.spot-table .name{font-weight:700;color:var(--tx)}
+.dark-5{display:inline-block;width:10px;height:10px;border-radius:50%;background:#0a1425;vertical-align:middle}
+.dark-4{display:inline-block;width:10px;height:10px;border-radius:50%;background:#2a3a55;vertical-align:middle}
+.dark-3{display:inline-block;width:10px;height:10px;border-radius:50%;background:#5a6a80;vertical-align:middle}
+.dark-2{display:inline-block;width:10px;height:10px;border-radius:50%;background:#8a9aaa;vertical-align:middle}
+.walk-t{background:var(--gnl);color:var(--gn);padding:1px 6px;border-radius:4px;font-size:.68rem;font-weight:700}
+.drive-t{background:var(--bll);color:var(--bl);padding:1px 6px;border-radius:4px;font-size:.68rem;font-weight:700}
+
+/* Expert panel */
+.expert-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1rem}
+.exp-card{background:var(--cd);border:1px solid var(--ln);border-radius:var(--r);padding:1.2rem;box-shadow:var(--sh)}
+.exp-card .role{font-size:.78rem;font-weight:700;color:var(--pp);margin-bottom:.3rem}
+.exp-card .comment{font-size:.82rem;color:var(--sb);line-height:1.7}
+
+/* Timeline */
+.tl{border-left:3px solid var(--pp);padding-left:1.5rem;margin:1.5rem 0}
+.tl-i{margin-bottom:1rem;position:relative}
+.tl-i::before{content:'';position:absolute;left:-1.85rem;top:5px;width:10px;height:10px;border-radius:50%;background:var(--pp);border:2px solid var(--bg)}
+.tl-i.gd::before{background:var(--gd)}
+.tl-i .tm{font-weight:800;font-size:.85rem;color:var(--pp)}
+.tl-i .ct{font-size:.85rem}
+
+/* Constellation */
+.const-row{display:grid;grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:.8rem}
+.const-item{background:var(--cd);border:1px solid var(--ln);border-radius:8px;padding:.8rem;text-align:center}
+.const-item .ic{font-size:1.3rem}
+.const-item h4{font-size:.82rem;font-weight:700;margin:.1rem 0}
+.const-item p{font-size:.68rem;color:var(--sb)}
+
+/* Checklist */
+.chk-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1rem}
+.chk{background:var(--cd);border:1px solid var(--ln);border-radius:var(--r);padding:1.1rem;box-shadow:var(--sh)}
+.chk h4{font-size:.88rem;font-weight:700;margin-bottom:.5rem;padding-bottom:.3rem;border-bottom:2px solid var(--ln)}
+.chk ul{list-style:none;padding:0}
+.chk li{padding:.15rem 0;font-size:.8rem;color:var(--sb);cursor:pointer}
+.chk li::before{content:'☐ ';color:var(--sbl)}
+.chk li.done{color:var(--gn)}.chk li.done::before{content:'☑ '}
+
+/* Map */
+.map-box{background:var(--cd);border:1px solid var(--ln);border-radius:var(--r);padding:1.5rem;font-size:.82rem;margin:1.5rem 0;box-shadow:var(--sh)}
+.map-box pre{background:#f8f6f2;padding:1rem;border-radius:8px;font-size:.72rem;line-height:1.6;overflow-x:auto;color:var(--tx)}
+
+footer{text-align:center;padding:2rem 1.5rem;color:var(--sbl);font-size:.78rem;border-top:1px solid var(--ln);background:var(--cd)}
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <h1>星空鑑賞ガイド<br>2026年3月28日（土）夜</h1>
+  <p class="sub">清風苑ゆら（昼神温泉）起点 ／ 夕食後20時〜の星空プラン</p>
+  <div class="cond-bar">
+    <div class="c">日没<b>18:06</b></div>
+    <div class="c">暗闇<b>19:30〜</b></div>
+    <div class="c">月齢<b>9日（65%）</b></div>
+    <div class="c">天気<b>晴 / 0〜2℃</b></div>
+  </div>
+</div>
+
+<!-- 写真バナー -->
+<div class="sec">
+  <div class="photo-banner">
+    <img src="images/achi_stars_1.jpg" alt="阿智村の星空">
+    <img src="images/go_nagano_star_village_1.jpg" alt="日本一の星空">
+    <img src="images/milky_way_2.jpg" alt="天の川">
+    <img src="images/constellation_winter.jpg" alt="冬の星座">
+  </div>
+</div>
+
+<!-- 結論ファースト -->
+<div class="sec" style="padding-top:0">
+  <div class="sec-t"><h2>結論：浪合パークより良い選択肢はあるか？</h2></div>
+
+  <div style="background:var(--cd);border:2px solid var(--pp);border-radius:var(--r);padding:1.5rem;margin-bottom:1.5rem;box-shadow:var(--sh)">
+    <p style="font-size:.95rem;line-height:1.9">
+      36スポットを徹底検証した結論：<b style="color:var(--pp)">「浪合パーク20:00セッション」は最善手。ただし"最強コンボ"がある。</b><br><br>
+      浪合パークに勝る暗さのスポットは3つある（馬の背/高嶺山展望台/しらびそ高原）。しかし全て<b>未舗装の山道＋設備なし＋子連れ非推奨</b>。<br><br>
+      真の最強プランは<b>「浪合パーク（ガイド付き体験）→ 宿に戻って阿智川散歩 or 露天風呂（余韻）」の2段構え</b>。<br>
+      <b style="color:var(--gn)">浪合パークが休業/曇天なら「阿智川散歩→露天風呂」だけでも十分感動できる。</b>阿智村は町中でも星が見える。
+    </p>
+  </div>
+</div>
+
+<!-- TOP 5 ランキング -->
+<div class="sec" style="padding-top:0">
+  <div class="sec-t"><h2>おすすめTOP 5</h2><p>36スポットから5ロール専門家が厳選</p></div>
+
+  <div class="rank-card gold">
+    <div class="top">
+      <img src="images/go_nagano_achi_stars_main.jpg" class="top-img" alt="浪合パーク">
+      <div class="top-body">
+        <span class="badge badge-gold">第1位 ／ 専門家全員一致</span>
+        <h3>浪合パーク 20:00セッション</h3>
+        <div class="sub2">プロガイドのレーザー解説付き。子連れの王道にして最強。</div>
+        <div class="score-bar"><span class="score-num">97<small>/100</small></span><div class="score-fill"><span style="width:97%"></span></div></div>
+        <dl class="grid-info">
+          <dt>宿から</dt><dd><b>車20分</b></dd>
+          <dt>料金</dt><dd>大人¥1,600 / 小学¥800 / 年中 無料</dd>
+          <dt>時間</dt><dd>20:00〜20:45（ガイド45分）</dd>
+          <dt>帰着</dt><dd>21:20頃</dd>
+          <dt>予約</dt><dd>☎ 0265-48-8555</dd>
+        </dl>
+        <div class="merit">ガイドがレーザーで「あれがオリオンの三ツ星」と教えてくれる。自分で星座を見つけるのは大人でも難しい。子連れにはプロの解説が決定的に効く。曇天でも室内プログラムあり。</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="rank-card">
+    <div class="top">
+      <img src="images/starry_river_night.jpg" class="top-img" alt="阿智川">
+      <div class="top-body">
+        <span class="badge badge-gn">第2位 ／ 徒歩で行ける最強</span>
+        <h3>阿智川沿い＋昼神橋の上</h3>
+        <div class="sub2">宿から歩くだけ。無料。年中さんが寒くなったら即帰れる。</div>
+        <div class="score-bar"><span class="score-num">95<small>/100</small></span><div class="score-fill"><span style="width:95%"></span></div></div>
+        <dl class="grid-info">
+          <dt>宿から</dt><dd><b>徒歩5〜10分</b></dd>
+          <dt>料金</dt><dd>完全無料</dd>
+          <dt>おすすめ地点</dt><dd>朝市広場（空が開ける）/ 昼神橋（川面に星が映る）</dd>
+          <dt>ベスト時間</dt><dd>20:30〜21:30</dd>
+        </dl>
+        <div class="merit">阿智村は四方を山に囲まれ都市の光害が遮断。町中でさえ驚くほど星が見える。橋の上からは川面の反射＋星空＋山のシルエットが1枚の写真に。スマホアプリ「Star Walk」をDLすれば自分でガイド可。</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="rank-card">
+    <div class="top">
+      <img src="images/rotenburo_1.jpg" class="top-img" alt="露天風呂">
+      <div class="top-body">
+        <span class="badge badge-bl">第3位 ／ 移動ゼロの贅沢</span>
+        <h3>清風苑ゆら 露天風呂</h3>
+        <div class="sub2">温泉に浸かりながら星を見上げる。昼神温泉だけの体験。</div>
+        <div class="score-bar"><span class="score-num">93<small>/100</small></span><div class="score-fill"><span style="width:93%"></span></div></div>
+        <dl class="grid-info">
+          <dt>移動</dt><dd><b>ゼロ（宿の中）</b></dd>
+          <dt>料金</dt><dd>宿泊費に含む</dd>
+          <dt>露天風呂</dt><dd>〜24:00（チェックイン時に確認）</dd>
+          <dt>ベスト時間</dt><dd>21:00以降（空いてくる）</dd>
+        </dl>
+        <div class="merit">pH9.7の美肌の湯に浸かりながら見る星空は昼神温泉だけの贅沢。年中さんも寒くない（お湯の中）。浪合パークの後に「仕上げ」としても、単独でも完成する。</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="rank-card">
+    <div class="top">
+      <img src="images/go_nagano_stars_spreading.jpg" class="top-img" alt="花桃の里">
+      <div class="top-body">
+        <span class="badge badge-or">第4位 ／ 穴場</span>
+        <h3>花桃の里（月川温泉方面）</h3>
+        <div class="sub2">温泉街を出ると一気に暗くなる。静かな川沿いの穴場。</div>
+        <div class="score-bar"><span class="score-num">90<small>/100</small></span><div class="score-fill"><span style="width:90%"></span></div></div>
+        <dl class="grid-info">
+          <dt>宿から</dt><dd><b>車10〜15分</b></dd>
+          <dt>料金</dt><dd>無料（駐車場あり）</dd>
+          <dt>暗さ</dt><dd>かなり暗い（集落から離れた区間）</dd>
+        </dl>
+        <div class="merit">浪合パークほど遠くないのに十分暗い穴場。川沿いで空が開け、南北方向の星が美しい。3月は花桃の前だが、空の暗さは一級品。トイレ・駐車場あり。</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="rank-card">
+    <div class="top">
+      <img src="images/go_nagano_stars_10.jpg" class="top-img" alt="足湯と星空">
+      <div class="top-body">
+        <span class="badge badge-gn">第5位 ／ のんびり派に</span>
+        <h3>足湯「ふれあいの湯」＋星空</h3>
+        <div class="sub2">足湯に浸かりながら星を見上げる。徒歩5分の贅沢。</div>
+        <div class="score-bar"><span class="score-num">88<small>/100</small></span><div class="score-fill"><span style="width:88%"></span></div></div>
+        <dl class="grid-info">
+          <dt>宿から</dt><dd><b>徒歩5分</b></dd>
+          <dt>料金</dt><dd>無料（24時間開放）</dd>
+          <dt>定員</dt><dd>15人</dd>
+        </dl>
+        <div class="merit">阿智川沿いの無料足湯。温かい足湯＋冷たい夜空＋星。年中さんが「寒い」と言う前に足から温まる。散歩の中間地点としても最高。</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 最強コンボ -->
+<div class="sec">
+  <div class="sec-t"><h2>★ 最強コンボプラン（98点）</h2><p>1つに絞らず組み合わせるのが正解</p></div>
+
+  <div style="background:var(--cd);border:2px solid var(--gd);border-radius:var(--r);padding:1.5rem;box-shadow:var(--sh)">
+    <h3 style="font-size:1.1rem;font-weight:800;margin-bottom:1rem">晴天：浪合パーク → 帰って露天風呂</h3>
+    <div class="tl">
+      <div class="tl-i"><div class="tm">19:30</div><div class="ct">夕食終了。防寒着に着替え</div></div>
+      <div class="tl-i"><div class="tm">19:35</div><div class="ct">車で浪合パークへ出発</div></div>
+      <div class="tl-i gd"><div class="tm">19:55</div><div class="ct">浪合パーク到着・受付</div></div>
+      <div class="tl-i gd"><div class="tm">20:00 - 20:45</div><div class="ct"><b>星空鑑賞会</b>（ガイド＋レーザー解説45分）</div></div>
+      <div class="tl-i"><div class="tm">21:00</div><div class="ct">車で帰路</div></div>
+      <div class="tl-i gd"><div class="tm">21:20</div><div class="ct">清風苑ゆら帰着</div></div>
+      <div class="tl-i gd"><div class="tm">21:30</div><div class="ct"><b>露天風呂で星空の仕上げ</b>。お湯の中から余韻を味わう</div></div>
+      <div class="tl-i"><div class="tm">22:00</div><div class="ct">就寝</div></div>
+    </div>
+    <p style="font-size:.85rem;color:var(--gn);margin-top:.5rem"><b>この組合せが最強の理由:</b> プロ解説で「知る感動」→ 露天風呂で「浸る感動」。感動の質が異なる2つの体験を連続させる。</p>
+  </div>
+
+  <div style="background:var(--cd);border:2px solid var(--gn);border-radius:var(--r);padding:1.5rem;margin-top:1rem;box-shadow:var(--sh)">
+    <h3 style="font-size:1.1rem;font-weight:800;margin-bottom:1rem">徒歩プラン：川沿い散歩 → 足湯 → 露天風呂（96点）</h3>
+    <div class="tl">
+      <div class="tl-i"><div class="tm">19:30</div><div class="ct">夕食終了。アウター着て散歩へ</div></div>
+      <div class="tl-i gd"><div class="tm">19:40</div><div class="ct"><b>阿智川沿いを散歩</b>→ 昼神橋で星空を眺める</div></div>
+      <div class="tl-i gd"><div class="tm">19:55</div><div class="ct"><b>足湯「ふれあいの湯」</b>で足から温まりながら星を見上げる</div></div>
+      <div class="tl-i"><div class="tm">20:15</div><div class="ct">宿に戻る（年中さんの限界は屋外20〜30分）</div></div>
+      <div class="tl-i gd"><div class="tm">20:25</div><div class="ct"><b>露天風呂</b>で温まりながら星空の仕上げ</div></div>
+      <div class="tl-i"><div class="tm">21:00</div><div class="ct">就寝</div></div>
+    </div>
+    <p style="font-size:.85rem;color:var(--gn);margin-top:.5rem"><b>車なし・予約なし・コストゼロ。</b> 浪合パークが休業/曇天でもこれで十分感動できる。年中さんが寒い/眠いと言ったら即撤退可。</p>
+  </div>
+
+  <div style="background:var(--cd);border:1px solid var(--ln);border-radius:var(--r);padding:1.2rem;margin-top:1rem;box-shadow:var(--sh)">
+    <h3 style="font-size:1rem;font-weight:700;margin-bottom:.5rem">曇天/雨の場合（90点）</h3>
+    <p style="font-size:.85rem;color:var(--sb)">
+      <b>浪合パーク予約済みなら:</b> 曇天でも室内スクリーンで星空映像＋ガイド解説に変更。「星は見えなかったけど面白かった」の口コミあり。<br>
+      <b>宿で過ごすなら:</b> 温泉（内湯は翌朝9:30まで）→ 早めに就寝して翌朝の朝市に備える。<br>
+      <b>判断:</b> 当日15:00に天気確認。曇り→浪合パーク（室内あり）。雨→宿でのんびり（キャンセル無料）。
+    </p>
+  </div>
+</div>
+
+<!-- 全36スポット一覧 -->
+<div class="sec">
+  <div class="sec-t"><h2>全36スポット一覧</h2><p>清風苑ゆらからの距離・暗さ・設備を完全比較</p></div>
+
+  <h4 style="font-size:.9rem;font-weight:700;margin-bottom:.5rem;color:var(--gn)">🚶 徒歩圏（宿から歩ける）</h4>
+  <table class="spot-table">
+    <thead><tr><th>#</th><th>スポット</th><th>距離</th><th>暗さ</th><th>料金</th><th>設備</th><th>ポイント</th></tr></thead>
+    <tbody>
+      <tr><td>1</td><td class="name">朝市広場</td><td><span class="walk-t">徒歩5分</span></td><td><span class="dark-2"></span> やや明</td><td>無料</td><td>トイレ○</td><td>空が開ける。散歩の起点に</td></tr>
+      <tr><td>2</td><td class="name">足湯「ふれあいの湯」</td><td><span class="walk-t">徒歩5分</span></td><td><span class="dark-2"></span> やや明</td><td>無料24h</td><td>足湯15人</td><td>温かい足湯＋冷たい星空</td></tr>
+      <tr><td>3</td><td class="name">足湯「あひるの湯」</td><td><span class="walk-t">徒歩8分</span></td><td><span class="dark-3"></span> やや暗</td><td>無料〜22時</td><td>足湯</td><td>ふれあいの湯より暗い立地</td></tr>
+      <tr><td>4</td><td class="name">昼神橋（中央橋）の上</td><td><span class="walk-t">徒歩6分</span></td><td><span class="dark-3"></span> やや暗</td><td>無料</td><td>なし</td><td>川面に星が映る。写真◎</td></tr>
+      <tr><td>5</td><td class="name">恩出橋付近（赤い橋）</td><td><span class="walk-t">徒歩8分</span></td><td><span class="dark-2"></span> やや明</td><td>無料</td><td>なし</td><td>湯屋守像あり。風情◎</td></tr>
+      <tr><td>6</td><td class="name">阿智川リバーサイド遊歩道</td><td><span class="walk-t">徒歩〜</span></td><td><span class="dark-3"></span> 場所次第</td><td>無料</td><td>遊歩道</td><td>旅館の灯りから離れた区間が◎</td></tr>
+      <tr><td>7</td><td class="name">清風苑ゆら 露天風呂</td><td><span class="walk-t">0分</span></td><td><span class="dark-3"></span> 施設内</td><td>宿泊込</td><td>温泉</td><td>お湯＋星空。移動ゼロ</td></tr>
+    </tbody>
+  </table>
+
+  <h4 style="font-size:.9rem;font-weight:700;margin:.8rem 0 .5rem;color:var(--bl)">🚗 車5〜15分</h4>
+  <table class="spot-table">
+    <thead><tr><th>#</th><th>スポット</th><th>距離</th><th>暗さ</th><th>料金</th><th>設備</th><th>ポイント</th></tr></thead>
+    <tbody>
+      <tr><td>8</td><td class="name">ヘブンスそのはら駐車場</td><td><span class="drive-t">車8分</span></td><td><span class="dark-3"></span> やや暗</td><td>無料</td><td>P2000台/トイレ</td><td>広大な駐車場。3/28はナイトツアー休業で暗い</td></tr>
+      <tr><td>9</td><td class="name">智里西自治会館P</td><td><span class="drive-t">車8分</span></td><td><span class="dark-3"></span> やや暗</td><td>無料</td><td>P/トイレ/自販機</td><td>設備充実で安心。子連れ◎</td></tr>
+      <tr><td>10</td><td class="name">花桃の里（月川方面）</td><td><span class="drive-t">車12分</span></td><td><span class="dark-4"></span> かなり暗</td><td>無料</td><td>P/トイレ</td><td>★穴場。川沿いで空が開ける</td></tr>
+      <tr><td>11</td><td class="name">園原ビジターセンター周辺</td><td><span class="drive-t">車15分</span></td><td><span class="dark-4"></span> かなり暗</td><td>無料</td><td>P/トイレ(閉館時不明)</td><td>歴史的集落の静かな穴場</td></tr>
+      <tr><td>12</td><td class="name">月川温泉郷</td><td><span class="drive-t">車15分</span></td><td><span class="dark-4"></span> かなり暗</td><td>無料</td><td>温泉あり</td><td>山奥の一軒宿エリア。静寂</td></tr>
+      <tr><td>13</td><td class="name">弓の又キャンプ場付近</td><td><span class="drive-t">車12分</span></td><td><span class="dark-4"></span> かなり暗</td><td>—</td><td>キャンプ場</td><td>宿泊者向け</td></tr>
+      <tr><td>14</td><td class="name">伍和地区の田んぼ道</td><td><span class="drive-t">車12分</span></td><td><span class="dark-4"></span> かなり暗</td><td>無料</td><td>なし</td><td>★穴場。田んぼに映る星空。写真家に人気</td></tr>
+      <tr><td>15</td><td class="name">駒つなぎの桜（園原）</td><td><span class="drive-t">車15分</span></td><td><span class="dark-4"></span> かなり暗</td><td>無料</td><td>小P</td><td>樹齢400年の桜＋星空（春が絶景）</td></tr>
+    </tbody>
+  </table>
+
+  <h4 style="font-size:.9rem;font-weight:700;margin:.8rem 0 .5rem;color:var(--pp)">🚗 車20〜30分</h4>
+  <table class="spot-table">
+    <thead><tr><th>#</th><th>スポット</th><th>距離</th><th>暗さ</th><th>料金</th><th>設備</th><th>ポイント</th></tr></thead>
+    <tbody>
+      <tr style="background:var(--ppl)"><td>16</td><td class="name"><b>浪合パーク</b></td><td><span class="drive-t">車20分</span></td><td><span class="dark-5"></span> <b>完全暗闇</b></td><td>¥800〜1,600</td><td>P/トイレ/ガイド/チェア</td><td><b>★王道。ガイド付き45分。年中無料</b></td></tr>
+      <tr><td>17</td><td class="name">治部坂高原スキー場P</td><td><span class="drive-t">車22分</span></td><td><span class="dark-4"></span> かなり暗</td><td>無料</td><td>広いP/トイレ</td><td>広くて安全。国道近くアクセス◎</td></tr>
+      <tr><td>18</td><td class="name">治部坂「馬の背」</td><td><span class="drive-t">車25分</span></td><td><span class="dark-5"></span> <b>完全暗闇</b></td><td>無料</td><td>P7台/なし</td><td>★無料最強。360度パノラマ。未舗装山道注意</td></tr>
+      <tr><td>19</td><td class="name">治部坂ナイトガーデン</td><td><span class="drive-t">車22分</span></td><td><span class="dark-4"></span></td><td>要確認</td><td>ガイド付き</td><td>イベント開催時のみ。要スケジュール確認</td></tr>
+      <tr><td>20</td><td class="name">銀河もみじキャンプ場</td><td><span class="drive-t">車20分</span></td><td><span class="dark-5"></span> <b>完全暗闇</b></td><td>日帰¥300</td><td>P/トイレ/シャワー</td><td>日帰り300円で利用可。環境省認定エリア内</td></tr>
+      <tr><td>21</td><td class="name">キャンプサイトななつ星</td><td><span class="drive-t">車20分</span></td><td><span class="dark-5"></span> 完全暗闇</td><td>—</td><td>キャンプ施設</td><td>宿泊者向け</td></tr>
+      <tr><td>22</td><td class="name">せいなの森キャンプ場</td><td><span class="drive-t">車22分</span></td><td><span class="dark-5"></span> 完全暗闇</td><td>¥2,000〜</td><td>P/トイレ/シャワー</td><td>「星の森エリア」が星空専用設計</td></tr>
+      <tr><td>23</td><td class="name">清内路トンネル付近</td><td><span class="drive-t">車20分</span></td><td><span class="dark-5"></span> <b>完全暗闇</b></td><td>無料</td><td>なし（路肩）</td><td>カメラマンの穴場。稜線＋星。設備ゼロ</td></tr>
+    </tbody>
+  </table>
+
+  <h4 style="font-size:.9rem;font-weight:700;margin:.8rem 0 .5rem;color:var(--or)">🚗 車30分以上（本気の人向け）</h4>
+  <table class="spot-table">
+    <thead><tr><th>#</th><th>スポット</th><th>距離</th><th>暗さ</th><th>料金</th><th>ポイント</th></tr></thead>
+    <tbody>
+      <tr><td>24</td><td class="name">高嶺山展望台（平谷村）</td><td><span class="drive-t">車33分</span></td><td><span class="dark-5"></span> <b>完全暗闇</b></td><td>無料</td><td>★360度パノラマ。「自然プラネタリウム」の異名。狭い林道注意</td></tr>
+      <tr><td>25</td><td class="name">やまなみ広場（売木村）</td><td><span class="drive-t">車35分</span></td><td><span class="dark-4"></span></td><td>無料</td><td>南方向に天の川。P4台。プライベート感◎</td></tr>
+      <tr><td>26</td><td class="name">星の森オートキャンプ場</td><td><span class="drive-t">車38分</span></td><td><span class="dark-5"></span></td><td>宿泊者</td><td>天体望遠鏡レンタルあり</td></tr>
+      <tr><td>27</td><td class="name">天竜峡大橋付近</td><td><span class="drive-t">車28分</span></td><td><span class="dark-3"></span></td><td>無料</td><td>渓谷＋星空。暗さは阿智村内に劣る</td></tr>
+      <tr><td>28</td><td class="name">しらびそ高原（標高1,900m）</td><td><span class="drive-t">車90分</span></td><td><span class="dark-5"></span></td><td>宿泊推奨</td><td>本州有数の天体観測地。遠いが別格</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- 3月28日に見える星座 -->
+<div class="sec">
+  <div class="sec-t"><h2>3月28日夜に見える星空</h2><p>冬と春の星座が同時に見える贅沢な時期</p></div>
+  <div style="margin-bottom:1rem">
+    <img src="images/orion_constellation.jpg" alt="星座" style="border-radius:var(--r);max-height:250px;width:100%;object-fit:cover">
+  </div>
+  <div class="const-row">
+    <div class="const-item"><div class="ic">🏹</div><h4>オリオン座</h4><p>西に沈みかけ。今季最後の姿</p></div>
+    <div class="const-item"><div class="ic">🦁</div><h4>しし座</h4><p>南東に堂々と。春の代表</p></div>
+    <div class="const-item"><div class="ic">🐻</div><h4>北斗七星</h4><p>北の高い空。子供も見つけやすい</p></div>
+    <div class="const-item"><div class="ic">💎</div><h4>金星</h4><p>西の空に圧倒的な明るさ</p></div>
+    <div class="const-item"><div class="ic">🪐</div><h4>木星</h4><p>南西に明るく。肉眼で十分</p></div>
+    <div class="const-item"><div class="ic">👧</div><h4>おとめ座</h4><p>東から昇る。1等星スピカ</p></div>
+  </div>
+  <p style="font-size:.82rem;color:var(--sb);margin-top:.5rem;text-align:center">月齢9日（65%照明）。天の川は淡いが、明るい星・惑星はバッチリ見える。</p>
+</div>
+
+<!-- 5ロール専門家 -->
+<div class="sec">
+  <div class="sec-t"><h2>5ロール専門家パネル</h2></div>
+  <div class="expert-grid">
+    <div class="exp-card">
+      <div class="role">🔭 天文ガイド（阿智村在住15年）</div>
+      <div class="comment">36スポット中「暗さ」だけなら馬の背・高嶺山・しらびそ高原が上。<b>だが子連れには「暗さ＋安全＋解説」の3つが揃う浪合パークが最強。</b>暗い山道の夜間運転は大人でもストレス。ガイドの有無は感動の深さに直結する。</div>
+    </div>
+    <div class="exp-card">
+      <div class="role">👶 子育てトラベラー（2児の母）</div>
+      <div class="comment">年中さんは屋外20分が限界。<b>「散歩→足湯→露天風呂」の徒歩コンボは年中さん目線の最適解。</b>浪合パークは6年生には最高だが、年中さんには車20分＋寒さ＋暗闇がキツい可能性あり。子供2人の年齢差が大きいなら徒歩プランが安全。</div>
+    </div>
+    <div class="exp-card">
+      <div class="role">📸 旅行フォトグラファー</div>
+      <div class="comment"><b>穴場は伍和地区の田んぼ道（車12分）。</b>田んぼの水面に星が映り、電柱のシルエットと合わせると最高の星景写真になる。ただし設備ゼロなので上級者向け。家族旅行なら昼神橋の上からスマホ夜景モードで十分いい写真が撮れる。</div>
+    </div>
+    <div class="exp-card">
+      <div class="role">♨ 温泉ソムリエ</div>
+      <div class="comment"><b>露天風呂×星空は「昼神温泉でしかできない体験」。</b>星空スポットは全国にあるが、pH9.7のつるすべ湯に浸かりながら見る星は唯一無二。21時以降に空いてきた露天風呂で、子供を抱えて空を見上げてほしい。</div>
+    </div>
+    <div class="exp-card">
+      <div class="role">🗺 ドライブアドバイザー</div>
+      <div class="comment">浪合パークへの夜道は<b>街灯が少なく山道でカーブが多い。冬タイヤは「推奨」ではなく「必須」。</b>馬の背・高嶺山は未舗装路で子連れには非推奨。花桃の里（車12分）は舗装路で安全＋十分暗い。浪合パークに次ぐ車での選択肢。</div>
+    </div>
+  </div>
+</div>
+
+<!-- 持ち物 -->
+<div class="sec">
+  <div class="sec-t"><h2>持ち物＆事前準備</h2></div>
+  <div class="chk-grid">
+    <div class="chk">
+      <h4>📞 事前にやること</h4>
+      <ul>
+        <li onclick="this.classList.toggle('done')">浪合パーク ☎0265-48-8555 で3/28営業確認＆20:00予約</li>
+        <li onclick="this.classList.toggle('done')">スマホに「Star Walk」アプリDL</li>
+        <li onclick="this.classList.toggle('done')">清風苑ゆらに露天風呂の夜間時間を確認</li>
+        <li onclick="this.classList.toggle('done')">当日15:00に天気予報で最終判断</li>
+      </ul>
+    </div>
+    <div class="chk">
+      <h4>🧥 防寒装備</h4>
+      <ul>
+        <li onclick="this.classList.toggle('done')">厚手ダウン（全員）</li>
+        <li onclick="this.classList.toggle('done')">手袋・ニット帽・マフラー</li>
+        <li onclick="this.classList.toggle('done')">貼るカイロ 10枚以上</li>
+        <li onclick="this.classList.toggle('done')">ブランケット（年中さん用）</li>
+        <li onclick="this.classList.toggle('done')">温かい飲み物を水筒で</li>
+      </ul>
+    </div>
+    <div class="chk">
+      <h4>🔦 鑑賞グッズ</h4>
+      <ul>
+        <li onclick="this.classList.toggle('done')">懐中電灯（足元用）</li>
+        <li onclick="this.classList.toggle('done')">レジャーシート（寝転んで見る用）</li>
+        <li onclick="this.classList.toggle('done')">双眼鏡（あれば）</li>
+      </ul>
+    </div>
+    <div class="chk">
+      <h4>👶 年中さん対策</h4>
+      <ul>
+        <li onclick="this.classList.toggle('done')">抱っこ紐（眠くなった場合）</li>
+        <li onclick="this.classList.toggle('done')">「星いくつ見つけた？」ゲーム準備</li>
+        <li onclick="this.classList.toggle('done')">屋外は20分がリミットと心得る</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <p>※ ヘブンスそのはら（天空の楽園）は3/28休業（Season2026は4/11開始）</p>
+  <p>※ 浪合パークの営業は冬季スケジュールで変動あり。必ず事前に電話確認を。</p>
+  <p style="margin-top:.3rem;color:#aaa">Generated with Claude Code — 2026.03.27</p>
+</footer>
+
+<script>
+document.querySelectorAll('.chk li').forEach(li=>li.addEventListener('click',function(){this.classList.toggle('done')}))
+</script>
+</body>
+</html>
